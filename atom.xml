@@ -3,9 +3,9 @@
   <title><![CDATA[Christ2Li's Blog]]></title>
   <subtitle><![CDATA[Never Cease to Learn]]></subtitle>
   <link href="/atom.xml" rel="self"/>
-  <link href="http://yoursite.com/"/>
+  <link href="http://www.christ2li.com/"/>
   <updated>2015-03-23T13:38:29.000Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>http://www.christ2li.com/</id>
   
   <author>
     <name><![CDATA[Christina Li]]></name>
@@ -16,8 +16,8 @@
   
   <entry>
     <title><![CDATA[2015年3月22日东莞万江下坝一日游]]></title>
-    <link href="http://yoursite.com/2015/03/22/Trip-to-WanJiangXiaBa/"/>
-    <id>http://yoursite.com/2015/03/22/Trip-to-WanJiangXiaBa/</id>
+    <link href="http://www.christ2li.com/2015/03/22/Trip-to-WanJiangXiaBa/"/>
+    <id>http://www.christ2li.com/2015/03/22/Trip-to-WanJiangXiaBa/</id>
     <published>2015-03-22T14:12:00.000Z</published>
     <updated>2015-03-23T13:38:29.000Z</updated>
     <content type="html"><![CDATA[<embed src="http://www.xiami.com/widget/0_1771770470/singlePlayer.swf" type="application/x-shockwave-flash" width="257" height="33" wmode="transparent" autostart="true">
@@ -28,16 +28,16 @@
     <![CDATA[<embed src="http://www.xiami.com/widget/0_1771770470/singlePlayer.swf" type="application/x-shockwave-flash" width="257" height="33" wmode="t]]>
     </summary>
     
-      <category term="游记" scheme="http://yoursite.com/tags/%E6%B8%B8%E8%AE%B0/"/>
+      <category term="游记" scheme="http://www.christ2li.com/tags/%E6%B8%B8%E8%AE%B0/"/>
     
-      <category term="游记" scheme="http://yoursite.com/categories/%E6%B8%B8%E8%AE%B0/"/>
+      <category term="游记" scheme="http://www.christ2li.com/categories/%E6%B8%B8%E8%AE%B0/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[Gone with the wind]]></title>
-    <link href="http://yoursite.com/2015/03/18/Gone-with-the-wind/"/>
-    <id>http://yoursite.com/2015/03/18/Gone-with-the-wind/</id>
+    <link href="http://www.christ2li.com/2015/03/18/Gone-with-the-wind/"/>
+    <id>http://www.christ2li.com/2015/03/18/Gone-with-the-wind/</id>
     <published>2015-03-18T15:04:27.000Z</published>
     <updated>2015-03-18T15:06:36.000Z</updated>
     <content type="html"><![CDATA[<p>Just for test</p>
@@ -47,7 +47,7 @@
 ]]>
     </summary>
     
-      <category term="读书笔记" scheme="http://yoursite.com/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+      <category term="读书笔记" scheme="http://www.christ2li.com/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
     
   </entry>
   
