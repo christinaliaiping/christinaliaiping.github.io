@@ -825,3 +825,20 @@ pre .clojure .title {
 pre .deletion {
   color: #dc322f;
 }
+.scrollup {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background-image: url("/images/scrollup.png");
+  opacity: 0.3;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+  filter: alpha(opacity=30);
+  cursor: pointer;
+}
+.scrollup:hover {
+  opacity: 0.7;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+  filter: alpha(opacity=70);
+}

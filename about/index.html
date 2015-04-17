@@ -158,6 +158,35 @@
   </div>
 </div>
 <script src="/js/toc.js" type="text/javascript"></script>
+
+  <div class="scrollup"></div>
+<script language="javascript">
+(function() {
+    /**
+     * @param speed ����ִ�е���ʱ��, ��λ����
+     * @param frames ��������֡��
+     */
+    var smoothScrollToTop = function(speed, frames) {
+        if (window.scrollY === 0) return;
+        //pPixes: ÿ�ι򶯵ľ���
+        var pPixes = Math.ceil(window.scrollY / frames);
+        if (pPixes === 0) pPixes = 1;
+        //interval: ÿ�ι򶯵�ʱ������
+        var interval = Math.ceil(speed / frames);
+        var doScroll = function() {
+            if (window.scrollY == 0) return;
+            var to = window.scrollY - pPixes;
+            if (to <= 0) to = 0;
+            window.scrollTo(0, to);
+            setTimeout(doScroll, interval);
+        };
+        doScroll();
+    };
+    document.querySelector(".scrollup").addEventListener("click", function(){
+        smoothScrollToTop(200, 4);
+    });
+})();
+</script>
 </aside>
     <div class="clearfix"></div>
   </div>
