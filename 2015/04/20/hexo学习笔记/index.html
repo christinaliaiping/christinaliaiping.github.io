@@ -66,6 +66,11 @@
       
 	    <!-- Table of Contents -->
 		
+		  <div id="toc" class="toc-article">
+		     <strong class="toc-title">文章目录</strong>
+		     <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#打开GitBash输入hexo命令，遇到node:_command_not_found"><span class="toc-number">1.</span> <span class="toc-text">打开GitBash输入hexo命令，遇到node: command not found</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#hexo博客文章头部和侧边栏显示目录"><span class="toc-number">2.</span> <span class="toc-text">hexo博客文章头部和侧边栏显示目录</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#实现概要"><span class="toc-number">2.1.</span> <span class="toc-text">实现概要</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#环境"><span class="toc-number">2.1.1.</span> <span class="toc-text">环境</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#修改或新建的文件"><span class="toc-number">2.1.2.</span> <span class="toc-text">修改或新建的文件</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#部署后文章目录显示异常"><span class="toc-number">2.2.</span> <span class="toc-text">部署后文章目录显示异常</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#参考链接"><span class="toc-number">2.3.</span> <span class="toc-text">参考链接</span></a></li></ol></li></ol>
+		  </div>
+		
         <p>　　本文的目的是记录在用hexo搭建博客时遇到的一些问题和解决方法，因此，内容并非原创，都是针对特定问题<br>而搜索的解决方案。<br><a id="more"></a></p>
 <h1 id="打开GitBash输入hexo命令，遇到node:_command_not_found">打开GitBash输入hexo命令，遇到node: command not found</h1><p>　　在安装好hexo和Nodejs第二天，打开打开GitBash输入hexo命令，遇到以下错误：</p>
 <pre><code>/C/Administrator/AppData/Roaming/<span class="built_in">npm</span>/<span class="attribute">hexo</span>: <span class="attribute">node</span>: command <span class="keyword">not</span> found
@@ -118,20 +123,9 @@ Node <span class="keyword">is</span> <span class="keyword">not</span> <span clas
   <span class="attribute">margin-left</span> <span class="number">1em</span>
 </code></pre></li>
 <li><p>themes/light/_config.yml<br>在widgets的配置中增加toc</p>
-<blockquote>
-<p>widgets:</p>
-<ul>
-<li>search</li>
-<li>category</li>
-<li>tag</li>
-<li>toc</li>
-<li>scrollup</li>
-</ul>
-</blockquote>
 </li>
 <li><p>themes/light/source/js/toc.js，代码见<a href="http://qybei.github.io/2015/03/03/hexo%E5%9C%A8%E4%BE%A7%E8%BE%B9%E6%A0%8F%E6%98%BE%E7%A4%BA%E7%9B%AE%E5%BD%95%E7%9A%84%E6%96%B9%E6%B3%95/" target="_blank" rel="external">链接一</a></p>
-<h2 id="部署后文章目录显示异常">部署后文章目录显示异常</h2><p>在hexo deploy后，本地的文章头部目录显示正常，而部署后博客文章目录显示不正常，这时需要进入.deploy-git文件夹，执行命令</p>
-<p>  git push</p>
+<h2 id="部署后文章目录显示异常">部署后文章目录显示异常</h2><p>在hexo deploy后，本地的文章头部目录显示正常，而部署后博客文章目录显示不正常，这时需要进入.deploy-git文件夹，执行命令<code>git push</code></p>
 </li>
 </ul>
 <h2 id="参考链接">参考链接</h2><p><a href="http://qybei.github.io/2015/03/03/hexo%E5%9C%A8%E4%BE%A7%E8%BE%B9%E6%A0%8F%E6%98%BE%E7%A4%BA%E7%9B%AE%E5%BD%95%E7%9A%84%E6%96%B9%E6%B3%95/" target="_blank" rel="external">链接一</a></p>
