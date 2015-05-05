@@ -68,7 +68,7 @@
 		
 		  <div id="toc" class="toc-article">
 		     <strong class="toc-title">文章目录</strong>
-		     <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#打开GitBash输入hexo命令，遇到node:_command_not_found"><span class="toc-number">1.</span> <span class="toc-text">打开GitBash输入hexo命令，遇到node: command not found</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#hexo博客文章头部和侧边栏显示目录"><span class="toc-number">2.</span> <span class="toc-text">hexo博客文章头部和侧边栏显示目录</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#实现概要"><span class="toc-number">2.1.</span> <span class="toc-text">实现概要</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#环境"><span class="toc-number">2.1.1.</span> <span class="toc-text">环境</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#修改或新建的文件"><span class="toc-number">2.1.2.</span> <span class="toc-text">修改或新建的文件</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#部署后文章目录显示异常"><span class="toc-number">2.2.</span> <span class="toc-text">部署后文章目录显示异常</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#参考链接"><span class="toc-number">2.3.</span> <span class="toc-text">参考链接</span></a></li></ol></li></ol>
+		     <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#打开GitBash输入hexo命令，遇到node:_command_not_found"><span class="toc-number">1.</span> <span class="toc-text">打开GitBash输入hexo命令，遇到node: command not found</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#hexo博客文章头部和侧边栏显示目录"><span class="toc-number">2.</span> <span class="toc-text">hexo博客文章头部和侧边栏显示目录</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#实现概要"><span class="toc-number">2.1.</span> <span class="toc-text">实现概要</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#环境"><span class="toc-number">2.1.1.</span> <span class="toc-text">环境</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#修改或新建的文件"><span class="toc-number">2.1.2.</span> <span class="toc-text">修改或新建的文件</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#部署后文章目录显示异常"><span class="toc-number">2.2.</span> <span class="toc-text">部署后文章目录显示异常</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#参考链接"><span class="toc-number">2.3.</span> <span class="toc-text">参考链接</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#删除主页上的不使用的标签和分类"><span class="toc-number">3.</span> <span class="toc-text">删除主页上的不使用的标签和分类</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#实现概要-1"><span class="toc-number">3.1.</span> <span class="toc-text">实现概要</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#环境-1"><span class="toc-number">3.1.1.</span> <span class="toc-text">环境</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#步骤"><span class="toc-number">3.2.</span> <span class="toc-text">步骤</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#参考链接-1"><span class="toc-number">3.3.</span> <span class="toc-text">参考链接</span></a></li></ol></li></ol>
 		  </div>
 		
         <p>　　本文的目的是记录在用hexo搭建博客时遇到的一些问题和解决方法，因此，内容并非原创，都是针对特定问题<br>而搜索的解决方案。<br><a id="more"></a></p>
@@ -131,6 +131,14 @@ Node <span class="keyword">is</span> <span class="keyword">not</span> <span clas
 <h2 id="参考链接">参考链接</h2><p><a href="http://qybei.github.io/2015/03/03/hexo%E5%9C%A8%E4%BE%A7%E8%BE%B9%E6%A0%8F%E6%98%BE%E7%A4%BA%E7%9B%AE%E5%BD%95%E7%9A%84%E6%96%B9%E6%B3%95/" target="_blank" rel="external">链接一</a></p>
 <p><a href="http://kuangqi.me/tricks/enable-table-of-contents-on-hexo/" target="_blank" rel="external">链接二</a></p>
 <p><a href="https://github.com/xiangming/landscape-plus" target="_blank" rel="external">链接三</a></p>
+<h1 id="删除主页上的不使用的标签和分类">删除主页上的不使用的标签和分类</h1><h2 id="实现概要-1">实现概要</h2><h3 id="环境-1">环境</h3><ul>
+<li>hexo3.0；</li>
+<li>默认主题light<h2 id="步骤">步骤</h2></li>
+<li>将博文中的原有标签删除</li>
+<li>删除hexo\public\categories下的不使用的分类（若是标签，则是\hexo\public\tags下不使用的标签）</li>
+<li>删除生成的html(可以省略)</li>
+<li>输入命令<code>hexo clean</code> <h2 id="参考链接-1">参考链接</h2><a href="https://github.com/hexojs/hexo/issues/899" target="_blank" rel="external">链接一</a><br><a href="https://github.com/hexojs/hexo/issues/181" target="_blank" rel="external">链接二</a></li>
+</ul>
 
       
     </div>
@@ -204,6 +212,8 @@ Node <span class="keyword">is</span> <span class="keyword">not</span> <span clas
 <div class="widget tag">
   <h3 class="title">分类</h3>
   <ul class="entry">
+  
+    <li><a href="/categories/Struts/">Struts</a><small>6</small></li>
   
     <li><a href="/categories/hexo/">hexo</a><small>1</small></li>
   

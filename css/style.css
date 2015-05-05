@@ -842,3 +842,6 @@ pre .deletion {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
   filter: alpha(opacity=70);
 }
+.toc li {
+  list-style-type: none;
+}

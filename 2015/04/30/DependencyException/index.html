@@ -1,0 +1,353 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>DependencyException | Christ2Li&#39;s Blog</title>
+  <meta name="author" content="Christina Li">
+  
+  <meta name="description" content="The following blog is not original used for knowledge management except for specific mention">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="DependencyException"/>
+  <meta property="og:site_name" content="Christ2Li&#39;s Blog"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  <link href="/favicon.png" rel="icon">
+  <link rel="alternate" href="/atom.xml" title="Christ2Li&#39;s Blog" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+
+</head>
+
+
+<body>
+  <header id="header" class="inner"><div class="alignleft">
+  <h1><a href="/">Christ2Li&#39;s Blog</a></h1>
+  <h2><a href="/">Never Cease to Learn</a></h2>
+</div>
+<nav id="main-nav" class="alignright">
+  <ul>
+    
+      <li><a href="/">Home</a></li>
+    
+      <li><a href="/archives">Archives</a></li>
+    
+      <li><a href="/about">About</a></li>
+    
+      <li><a href="/todolist">ToDo</a></li>
+    
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div></header>
+  <div id="content" class="inner">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2015-04-30T07:31:33.000Z"><a href="/2015/04/30/DependencyException/">2015-04-30</a></time>
+      
+      
+  
+    <h1 class="title">DependencyException</h1>
+  
+
+    </header>
+    <div class="entry">
+      
+	    <!-- Table of Contents -->
+		
+		  <div id="toc" class="toc-article">
+		     <strong class="toc-title">文章目录</strong>
+		     <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#时间"><span class="toc-number">1.</span> <span class="toc-text">时间</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#问题"><span class="toc-number">2.</span> <span class="toc-text">问题</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#报错"><span class="toc-number">3.</span> <span class="toc-text">报错</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#原因"><span class="toc-number">4.</span> <span class="toc-text">原因</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#解决"><span class="toc-number">5.</span> <span class="toc-text">解决</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#参考链接"><span class="toc-number">6.</span> <span class="toc-text">参考链接</span></a></li></ol>
+		  </div>
+		
+        <p>添加init-param配置后，报错Dispatcher initialization failed com.opensymphony.xwork2.inject.DependencyException</p>
+<a id="more"></a>
+<h1 id="时间">时间</h1><p>　　2015年4月9日</p>
+<h1 id="问题">问题</h1><p>　　Web.xml添加以下配置后<br>    <init-param><br>        <param-name>config</param-name><br>        <param-value> struts.xml</param-value><br>    </init-param></p>
+<p>报错<code>Dispatcher initialization failed com.opensymphony.xwork2.inject.DependencyException</code></p>
+<h1 id="报错">报错</h1><pre><code><span class="number">2015</span>-<span class="number">4</span>-<span class="number">9</span> <span class="number">16</span>:<span class="number">42</span>:<span class="number">23</span> org<span class="class">.apache</span><span class="class">.struts2</span><span class="class">.dispatcher</span><span class="class">.Dispatcher</span> error
+严重: Dispatcher initialization failed
+com<span class="class">.opensymphony</span><span class="class">.xwork2</span><span class="class">.inject</span><span class="class">.DependencyException</span>: com<span class="class">.opensymphony</span><span class="class">.xwork2</span><span class="class">.inject</span><span class="class">.ContainerImpl</span><span class="variable">$MissingDependencyException</span>: No mapping found <span class="keyword">for</span> dependency [type=com<span class="class">.opensymphony</span><span class="class">.xwork2</span><span class="class">.ObjectFactory</span>, name=<span class="string">'default'</span>] <span class="keyword">in</span> public void com<span class="class">.opensymphony</span><span class="class">.xwork2</span><span class="class">.config</span><span class="class">.providers</span><span class="class">.XmlConfigurationProvider</span><span class="class">.setObjectFactory</span>(com<span class="class">.opensymphony</span><span class="class">.xwork2</span><span class="class">.ObjectFactory</span>).
+    at com<span class="class">.opensymphony</span><span class="class">.xwork2</span><span class="class">.inject</span><span class="class">.ContainerImpl</span><span class="class">.addInjectorsForMembers</span>(ContainerImpl<span class="class">.java</span>:<span class="number">144</span>)
+    at com<span class="class">.opensymphony</span><span class="class">.xwork2</span><span class="class">.inject</span><span class="class">.ContainerImpl</span><span class="class">.addInjectorsForMethods</span>(ContainerImpl<span class="class">.java</span>:<span class="number">113</span>)
+    at com<span class="class">.opensymphony</span><span class="class">.xwork2</span><span class="class">.inject</span><span class="class">.ContainerImpl</span><span class="class">.addInjectors</span>(ContainerImpl<span class="class">.java</span>:<span class="number">90</span>)
+    at com<span class="class">.opensymphony</span><span class="class">.xwork2</span><span class="class">.inject</span><span class="class">.ContainerImpl</span><span class="class">.addInjectors</span>(ContainerImpl<span class="class">.java</span>:<span class="number">86</span>)
+    at com<span class="class">.opensymphony</span><span class="class">.xwork2</span><span class="class">.inject</span><span class="class">.ContainerImpl</span>$<span class="number">1</span>.<span class="function"><span class="title">create</span><span class="params">(ContainerImpl.java:<span class="number">71</span>)</span></span>
+    at com<span class="class">.opensymphony</span><span class="class">.xwork2</span><span class="class">.inject</span><span class="class">.ContainerImpl</span>$<span class="number">1</span>.<span class="function"><span class="title">create</span><span class="params">(ContainerImpl.java:<span class="number">67</span>)</span></span>
+    at com<span class="class">.opensymphony</span><span class="class">.xwork2</span><span class="class">.inject</span><span class="class">.util</span><span class="class">.ReferenceCache</span><span class="variable">$CallableCreate</span>.<span class="function"><span class="title">call</span><span class="params">(ReferenceCache.java:<span class="number">150</span>)</span></span>
+    at java<span class="class">.util</span><span class="class">.concurrent</span><span class="class">.FutureTask</span><span class="variable">$Sync</span>.<span class="function"><span class="title">innerRun</span><span class="params">(Unknown Source)</span></span>
+    at java<span class="class">.util</span><span class="class">.concurrent</span><span class="class">.FutureTask</span><span class="class">.run</span>(Unknown Source)
+    at com<span class="class">.opensymphony</span><span class="class">.xwork2</span><span class="class">.inject</span><span class="class">.util</span><span class="class">.ReferenceCache</span><span class="class">.internalCreate</span>(ReferenceCache<span class="class">.java</span>:<span class="number">76</span>)
+    at com<span class="class">.opensymphony</span><span class="class">.xwork2</span><span class="class">.inject</span><span class="class">.util</span><span class="class">.ReferenceCache</span><span class="class">.get</span>(ReferenceCache<span class="class">.java</span>:<span class="number">116</span>)
+    at com<span class="class">.opensymphony</span><span class="class">.xwork2</span><span class="class">.inject</span><span class="class">.ContainerImpl</span><span class="class">.inject</span>(ContainerImpl<span class="class">.java</span>:<span class="number">490</span>)
+    at com<span class="class">.opensymphony</span><span class="class">.xwork2</span><span class="class">.inject</span><span class="class">.ContainerImpl</span>$<span class="number">6</span>.<span class="function"><span class="title">call</span><span class="params">(ContainerImpl.java:<span class="number">530</span>)</span></span>
+    at com<span class="class">.opensymphony</span><span class="class">.xwork2</span><span class="class">.inject</span><span class="class">.ContainerImpl</span>$<span class="number">6</span>.<span class="function"><span class="title">call</span><span class="params">(ContainerImpl.java:<span class="number">528</span>)</span></span>
+    at com<span class="class">.opensymphony</span><span class="class">.xwork2</span><span class="class">.inject</span><span class="class">.ContainerImpl</span><span class="class">.callInContext</span>(ContainerImpl<span class="class">.java</span>:<span class="number">584</span>)
+    at com<span class="class">.opensymphony</span><span class="class">.xwork2</span><span class="class">.inject</span><span class="class">.ContainerImpl</span><span class="class">.inject</span>(ContainerImpl<span class="class">.java</span>:<span class="number">528</span>)
+    at com<span class="class">.opensymphony</span><span class="class">.xwork2</span><span class="class">.config</span><span class="class">.impl</span><span class="class">.DefaultConfiguration</span><span class="class">.reloadContainer</span>(DefaultConfiguration<span class="class">.java</span>:<span class="number">263</span>)
+    at com<span class="class">.opensymphony</span><span class="class">.xwork2</span><span class="class">.config</span><span class="class">.ConfigurationManager</span><span class="class">.getConfiguration</span>(ConfigurationManager<span class="class">.java</span>:<span class="number">67</span>)
+    at org<span class="class">.apache</span><span class="class">.struts2</span><span class="class">.dispatcher</span><span class="class">.Dispatcher</span><span class="class">.getContainer</span>(Dispatcher<span class="class">.java</span>:<span class="number">967</span>)
+    at org<span class="class">.apache</span><span class="class">.struts2</span><span class="class">.dispatcher</span><span class="class">.Dispatcher</span><span class="class">.init_PreloadConfiguration</span>(Dispatcher<span class="class">.java</span>:<span class="number">435</span>)
+    at org<span class="class">.apache</span><span class="class">.struts2</span><span class="class">.dispatcher</span><span class="class">.Dispatcher</span><span class="class">.init</span>(Dispatcher<span class="class">.java</span>:<span class="number">479</span>)
+    at org<span class="class">.apache</span><span class="class">.struts2</span><span class="class">.dispatcher</span><span class="class">.ng</span><span class="class">.InitOperations</span><span class="class">.initDispatcher</span>(InitOperations<span class="class">.java</span>:<span class="number">74</span>)
+    at org<span class="class">.apache</span><span class="class">.struts2</span><span class="class">.dispatcher</span><span class="class">.ng</span><span class="class">.filter</span><span class="class">.StrutsPrepareAndExecuteFilter</span><span class="class">.init</span>(StrutsPrepareAndExecuteFilter<span class="class">.java</span>:<span class="number">57</span>)
+    at org<span class="class">.apache</span><span class="class">.catalina</span><span class="class">.core</span><span class="class">.ApplicationFilterConfig</span><span class="class">.initFilter</span>(ApplicationFilterConfig<span class="class">.java</span>:<span class="number">279</span>)
+    at org<span class="class">.apache</span><span class="class">.catalina</span><span class="class">.core</span><span class="class">.ApplicationFilterConfig</span><span class="class">.getFilter</span>(ApplicationFilterConfig<span class="class">.java</span>:<span class="number">260</span>)
+    at org<span class="class">.apache</span><span class="class">.catalina</span><span class="class">.core</span><span class="class">.ApplicationFilterConfig</span>.&lt;init&gt;(ApplicationFilterConfig<span class="class">.java</span>:<span class="number">105</span>)
+    at org<span class="class">.apache</span><span class="class">.catalina</span><span class="class">.core</span><span class="class">.StandardContext</span><span class="class">.filterStart</span>(StandardContext<span class="class">.java</span>:<span class="number">4854</span>)
+    at org<span class="class">.apache</span><span class="class">.catalina</span><span class="class">.core</span><span class="class">.StandardContext</span><span class="class">.startInternal</span>(StandardContext<span class="class">.java</span>:<span class="number">5542</span>)
+    at org<span class="class">.apache</span><span class="class">.catalina</span><span class="class">.util</span><span class="class">.LifecycleBase</span><span class="class">.start</span>(LifecycleBase<span class="class">.java</span>:<span class="number">150</span>)
+    at org<span class="class">.apache</span><span class="class">.catalina</span><span class="class">.core</span><span class="class">.ContainerBase</span><span class="class">.addChildInternal</span>(ContainerBase<span class="class">.java</span>:<span class="number">901</span>)
+    at org<span class="class">.apache</span><span class="class">.catalina</span><span class="class">.core</span><span class="class">.ContainerBase</span><span class="class">.addChild</span>(ContainerBase<span class="class">.java</span>:<span class="number">877</span>)
+    at org<span class="class">.apache</span><span class="class">.catalina</span><span class="class">.core</span><span class="class">.StandardHost</span><span class="class">.addChild</span>(StandardHost<span class="class">.java</span>:<span class="number">649</span>)
+    at org<span class="class">.apache</span><span class="class">.catalina</span><span class="class">.startup</span><span class="class">.HostConfig</span><span class="class">.deployDescriptor</span>(HostConfig<span class="class">.java</span>:<span class="number">672</span>)
+    at org<span class="class">.apache</span><span class="class">.catalina</span><span class="class">.startup</span><span class="class">.HostConfig</span><span class="variable">$DeployDescriptor</span>.<span class="function"><span class="title">run</span><span class="params">(HostConfig.java:<span class="number">1859</span>)</span></span>
+    at java<span class="class">.util</span><span class="class">.concurrent</span><span class="class">.Executors</span><span class="variable">$RunnableAdapter</span>.<span class="function"><span class="title">call</span><span class="params">(Unknown Source)</span></span>
+    at java<span class="class">.util</span><span class="class">.concurrent</span><span class="class">.FutureTask</span><span class="variable">$Sync</span>.<span class="function"><span class="title">innerRun</span><span class="params">(Unknown Source)</span></span>
+    at java<span class="class">.util</span><span class="class">.concurrent</span><span class="class">.FutureTask</span><span class="class">.run</span>(Unknown Source)
+    at java<span class="class">.util</span><span class="class">.concurrent</span><span class="class">.ThreadPoolExecutor</span><span class="variable">$Worker</span>.<span class="function"><span class="title">runTask</span><span class="params">(Unknown Source)</span></span>
+    at java<span class="class">.util</span><span class="class">.concurrent</span><span class="class">.ThreadPoolExecutor</span><span class="variable">$Worker</span>.<span class="function"><span class="title">run</span><span class="params">(Unknown Source)</span></span>
+    at java<span class="class">.lang</span><span class="class">.Thread</span><span class="class">.run</span>(Unknown Source)
+Caused by: com<span class="class">.opensymphony</span><span class="class">.xwork2</span><span class="class">.inject</span><span class="class">.ContainerImpl</span><span class="variable">$MissingDependencyException</span>: No mapping found <span class="keyword">for</span> dependency [type=com<span class="class">.opensymphony</span><span class="class">.xwork2</span><span class="class">.ObjectFactory</span>, name=<span class="string">'default'</span>] <span class="keyword">in</span> public void com<span class="class">.opensymphony</span><span class="class">.xwork2</span><span class="class">.config</span><span class="class">.providers</span><span class="class">.XmlConfigurationProvider</span><span class="class">.setObjectFactory</span>(com<span class="class">.opensymphony</span><span class="class">.xwork2</span><span class="class">.ObjectFactory</span>).
+    at com<span class="class">.opensymphony</span><span class="class">.xwork2</span><span class="class">.inject</span><span class="class">.ContainerImpl</span><span class="class">.createParameterInjector</span>(ContainerImpl<span class="class">.java</span>:<span class="number">239</span>)
+    at com<span class="class">.opensymphony</span><span class="class">.xwork2</span><span class="class">.inject</span><span class="class">.ContainerImpl</span><span class="class">.getParametersInjectors</span>(ContainerImpl<span class="class">.java</span>:<span class="number">229</span>)
+    at com<span class="class">.opensymphony</span><span class="class">.xwork2</span><span class="class">.inject</span><span class="class">.ContainerImpl</span><span class="variable">$MethodInjector</span>.&lt;init&gt;(ContainerImpl<span class="class">.java</span>:<span class="number">293</span>)
+    at com<span class="class">.opensymphony</span><span class="class">.xwork2</span><span class="class">.inject</span><span class="class">.ContainerImpl</span>$<span class="number">3</span>.<span class="function"><span class="title">create</span><span class="params">(ContainerImpl.java:<span class="number">117</span>)</span></span>
+    at com<span class="class">.opensymphony</span><span class="class">.xwork2</span><span class="class">.inject</span><span class="class">.ContainerImpl</span>$<span class="number">3</span>.<span class="function"><span class="title">create</span><span class="params">(ContainerImpl.java:<span class="number">114</span>)</span></span>
+    at com<span class="class">.opensymphony</span><span class="class">.xwork2</span><span class="class">.inject</span><span class="class">.ContainerImpl</span><span class="class">.addInjectorsForMembers</span>(ContainerImpl<span class="class">.java</span>:<span class="number">141</span>)
+    ... <span class="number">39</span> more
+<span class="number">2015</span>-<span class="number">4</span>-<span class="number">9</span> <span class="number">16</span>:<span class="number">42</span>:<span class="number">23</span> org<span class="class">.apache</span><span class="class">.catalina</span><span class="class">.core</span><span class="class">.StandardContext</span> filterStart
+严重: Exception starting <span class="attribute">filter</span> struts2
+com<span class="class">.opensymphony</span><span class="class">.xwork2</span><span class="class">.inject</span><span class="class">.ContainerImpl</span><span class="variable">$MissingDependencyException</span>: No mapping found <span class="keyword">for</span> dependency [type=com<span class="class">.opensymphony</span><span class="class">.xwork2</span><span class="class">.ObjectFactory</span>, name=<span class="string">'default'</span>] <span class="keyword">in</span> public void com<span class="class">.opensymphony</span><span class="class">.xwork2</span><span class="class">.config</span><span class="class">.providers</span><span class="class">.XmlConfigurationProvider</span><span class="class">.setObjectFactory</span>(com<span class="class">.opensymphony</span><span class="class">.xwork2</span><span class="class">.ObjectFactory</span>). - Class: com<span class="class">.opensymphony</span><span class="class">.xwork2</span><span class="class">.inject</span><span class="class">.ContainerImpl</span>
+File: ContainerImpl<span class="class">.java</span>
+Method: addInjectorsForMembers
+Line: <span class="number">144</span> - com/opensymphony/xwork2/inject/ContainerImpl<span class="class">.java</span>:<span class="number">144</span>:-<span class="number">1</span>
+    at org<span class="class">.apache</span><span class="class">.struts2</span><span class="class">.dispatcher</span><span class="class">.Dispatcher</span><span class="class">.init</span>(Dispatcher<span class="class">.java</span>:<span class="number">493</span>)
+    at org<span class="class">.apache</span><span class="class">.struts2</span><span class="class">.dispatcher</span><span class="class">.ng</span><span class="class">.InitOperations</span><span class="class">.initDispatcher</span>(InitOperations<span class="class">.java</span>:<span class="number">74</span>)
+    at org<span class="class">.apache</span><span class="class">.struts2</span><span class="class">.dispatcher</span><span class="class">.ng</span><span class="class">.filter</span><span class="class">.StrutsPrepareAndExecuteFilter</span><span class="class">.init</span>(StrutsPrepareAndExecuteFilter<span class="class">.java</span>:<span class="number">57</span>)
+    at org<span class="class">.apache</span><span class="class">.catalina</span><span class="class">.core</span><span class="class">.ApplicationFilterConfig</span><span class="class">.initFilter</span>(ApplicationFilterConfig<span class="class">.java</span>:<span class="number">279</span>)
+    at org<span class="class">.apache</span><span class="class">.catalina</span><span class="class">.core</span><span class="class">.ApplicationFilterConfig</span><span class="class">.getFilter</span>(ApplicationFilterConfig<span class="class">.java</span>:<span class="number">260</span>)
+    at org<span class="class">.apache</span><span class="class">.catalina</span><span class="class">.core</span><span class="class">.ApplicationFilterConfig</span>.&lt;init&gt;(ApplicationFilterConfig<span class="class">.java</span>:<span class="number">105</span>)
+    at org<span class="class">.apache</span><span class="class">.catalina</span><span class="class">.core</span><span class="class">.StandardContext</span><span class="class">.filterStart</span>(StandardContext<span class="class">.java</span>:<span class="number">4854</span>)
+    at org<span class="class">.apache</span><span class="class">.catalina</span><span class="class">.core</span><span class="class">.StandardContext</span><span class="class">.startInternal</span>(StandardContext<span class="class">.java</span>:<span class="number">5542</span>)
+    at org<span class="class">.apache</span><span class="class">.catalina</span><span class="class">.util</span><span class="class">.LifecycleBase</span><span class="class">.start</span>(LifecycleBase<span class="class">.java</span>:<span class="number">150</span>)
+    at org<span class="class">.apache</span><span class="class">.catalina</span><span class="class">.core</span><span class="class">.ContainerBase</span><span class="class">.addChildInternal</span>(ContainerBase<span class="class">.java</span>:<span class="number">901</span>)
+    at org<span class="class">.apache</span><span class="class">.catalina</span><span class="class">.core</span><span class="class">.ContainerBase</span><span class="class">.addChild</span>(ContainerBase<span class="class">.java</span>:<span class="number">877</span>)
+    at org<span class="class">.apache</span><span class="class">.catalina</span><span class="class">.core</span><span class="class">.StandardHost</span><span class="class">.addChild</span>(StandardHost<span class="class">.java</span>:<span class="number">649</span>)
+    at org<span class="class">.apache</span><span class="class">.catalina</span><span class="class">.startup</span><span class="class">.HostConfig</span><span class="class">.deployDescriptor</span>(HostConfig<span class="class">.java</span>:<span class="number">672</span>)
+    at org<span class="class">.apache</span><span class="class">.catalina</span><span class="class">.startup</span><span class="class">.HostConfig</span><span class="variable">$DeployDescriptor</span>.<span class="function"><span class="title">run</span><span class="params">(HostConfig.java:<span class="number">1859</span>)</span></span>
+    at java<span class="class">.util</span><span class="class">.concurrent</span><span class="class">.Executors</span><span class="variable">$RunnableAdapter</span>.<span class="function"><span class="title">call</span><span class="params">(Unknown Source)</span></span>
+    at java<span class="class">.util</span><span class="class">.concurrent</span><span class="class">.FutureTask</span><span class="variable">$Sync</span>.<span class="function"><span class="title">innerRun</span><span class="params">(Unknown Source)</span></span>
+    at java<span class="class">.util</span><span class="class">.concurrent</span><span class="class">.FutureTask</span><span class="class">.run</span>(Unknown Source)
+    at java<span class="class">.util</span><span class="class">.concurrent</span><span class="class">.ThreadPoolExecutor</span><span class="variable">$Worker</span>.<span class="function"><span class="title">runTask</span><span class="params">(Unknown Source)</span></span>
+    at java<span class="class">.util</span><span class="class">.concurrent</span><span class="class">.ThreadPoolExecutor</span><span class="variable">$Worker</span>.<span class="function"><span class="title">run</span><span class="params">(Unknown Source)</span></span>
+    at java<span class="class">.lang</span><span class="class">.Thread</span><span class="class">.run</span>(Unknown Source)
+Caused by: com<span class="class">.opensymphony</span><span class="class">.xwork2</span><span class="class">.inject</span><span class="class">.DependencyException</span>: com<span class="class">.opensymphony</span><span class="class">.xwork2</span><span class="class">.inject</span><span class="class">.ContainerImpl</span><span class="variable">$MissingDependencyException</span>: No mapping found <span class="keyword">for</span> dependency [type=com<span class="class">.opensymphony</span><span class="class">.xwork2</span><span class="class">.ObjectFactory</span>, name=<span class="string">'default'</span>] <span class="keyword">in</span> public void com<span class="class">.opensymphony</span><span class="class">.xwork2</span><span class="class">.config</span><span class="class">.providers</span><span class="class">.XmlConfigurationProvider</span><span class="class">.setObjectFactory</span>(com<span class="class">.opensymphony</span><span class="class">.xwork2</span><span class="class">.ObjectFactory</span>).
+    at com<span class="class">.opensymphony</span><span class="class">.xwork2</span><span class="class">.inject</span><span class="class">.ContainerImpl</span><span class="class">.addInjectorsForMembers</span>(ContainerImpl<span class="class">.java</span>:<span class="number">144</span>)
+    at com<span class="class">.opensymphony</span><span class="class">.xwork2</span><span class="class">.inject</span><span class="class">.ContainerImpl</span><span class="class">.addInjectorsForMethods</span>(ContainerImpl<span class="class">.java</span>:<span class="number">113</span>)
+    at com<span class="class">.opensymphony</span><span class="class">.xwork2</span><span class="class">.inject</span><span class="class">.ContainerImpl</span><span class="class">.addInjectors</span>(ContainerImpl<span class="class">.java</span>:<span class="number">90</span>)
+    at com<span class="class">.opensymphony</span><span class="class">.xwork2</span><span class="class">.inject</span><span class="class">.ContainerImpl</span><span class="class">.addInjectors</span>(ContainerImpl<span class="class">.java</span>:<span class="number">86</span>)
+    at com<span class="class">.opensymphony</span><span class="class">.xwork2</span><span class="class">.inject</span><span class="class">.ContainerImpl</span>$<span class="number">1</span>.<span class="function"><span class="title">create</span><span class="params">(ContainerImpl.java:<span class="number">71</span>)</span></span>
+    at com<span class="class">.opensymphony</span><span class="class">.xwork2</span><span class="class">.inject</span><span class="class">.ContainerImpl</span>$<span class="number">1</span>.<span class="function"><span class="title">create</span><span class="params">(ContainerImpl.java:<span class="number">67</span>)</span></span>
+    at com<span class="class">.opensymphony</span><span class="class">.xwork2</span><span class="class">.inject</span><span class="class">.util</span><span class="class">.ReferenceCache</span><span class="variable">$CallableCreate</span>.<span class="function"><span class="title">call</span><span class="params">(ReferenceCache.java:<span class="number">150</span>)</span></span>
+    at java<span class="class">.util</span><span class="class">.concurrent</span><span class="class">.FutureTask</span><span class="variable">$Sync</span>.<span class="function"><span class="title">innerRun</span><span class="params">(Unknown Source)</span></span>
+    at java<span class="class">.util</span><span class="class">.concurrent</span><span class="class">.FutureTask</span><span class="class">.run</span>(Unknown Source)
+    at com<span class="class">.opensymphony</span><span class="class">.xwork2</span><span class="class">.inject</span><span class="class">.util</span><span class="class">.ReferenceCache</span><span class="class">.internalCreate</span>(ReferenceCache<span class="class">.java</span>:<span class="number">76</span>)
+    at com<span class="class">.opensymphony</span><span class="class">.xwork2</span><span class="class">.inject</span><span class="class">.util</span><span class="class">.ReferenceCache</span><span class="class">.get</span>(ReferenceCache<span class="class">.java</span>:<span class="number">116</span>)
+    at com<span class="class">.opensymphony</span><span class="class">.xwork2</span><span class="class">.inject</span><span class="class">.ContainerImpl</span><span class="class">.inject</span>(ContainerImpl<span class="class">.java</span>:<span class="number">490</span>)
+    at com<span class="class">.opensymphony</span><span class="class">.xwork2</span><span class="class">.inject</span><span class="class">.ContainerImpl</span>$<span class="number">6</span>.<span class="function"><span class="title">call</span><span class="params">(ContainerImpl.java:<span class="number">530</span>)</span></span>
+    at com<span class="class">.opensymphony</span><span class="class">.xwork2</span><span class="class">.inject</span><span class="class">.ContainerImpl</span>$<span class="number">6</span>.<span class="function"><span class="title">call</span><span class="params">(ContainerImpl.java:<span class="number">528</span>)</span></span>
+    at com<span class="class">.opensymphony</span><span class="class">.xwork2</span><span class="class">.inject</span><span class="class">.ContainerImpl</span><span class="class">.callInContext</span>(ContainerImpl<span class="class">.java</span>:<span class="number">584</span>)
+    at com<span class="class">.opensymphony</span><span class="class">.xwork2</span><span class="class">.inject</span><span class="class">.ContainerImpl</span><span class="class">.inject</span>(ContainerImpl<span class="class">.java</span>:<span class="number">528</span>)
+    at com<span class="class">.opensymphony</span><span class="class">.xwork2</span><span class="class">.config</span><span class="class">.impl</span><span class="class">.DefaultConfiguration</span><span class="class">.reloadContainer</span>(DefaultConfiguration<span class="class">.java</span>:<span class="number">263</span>)
+    at com<span class="class">.opensymphony</span><span class="class">.xwork2</span><span class="class">.config</span><span class="class">.ConfigurationManager</span><span class="class">.getConfiguration</span>(ConfigurationManager<span class="class">.java</span>:<span class="number">67</span>)
+    at org<span class="class">.apache</span><span class="class">.struts2</span><span class="class">.dispatcher</span><span class="class">.Dispatcher</span><span class="class">.getContainer</span>(Dispatcher<span class="class">.java</span>:<span class="number">967</span>)
+    at org<span class="class">.apache</span><span class="class">.struts2</span><span class="class">.dispatcher</span><span class="class">.Dispatcher</span><span class="class">.init_PreloadConfiguration</span>(Dispatcher<span class="class">.java</span>:<span class="number">435</span>)
+    at org<span class="class">.apache</span><span class="class">.struts2</span><span class="class">.dispatcher</span><span class="class">.Dispatcher</span><span class="class">.init</span>(Dispatcher<span class="class">.java</span>:<span class="number">479</span>)
+    ... <span class="number">19</span> more
+Caused by: com<span class="class">.opensymphony</span><span class="class">.xwork2</span><span class="class">.inject</span><span class="class">.ContainerImpl</span><span class="variable">$MissingDependencyException</span>: No mapping found <span class="keyword">for</span> dependency [type=com<span class="class">.opensymphony</span><span class="class">.xwork2</span><span class="class">.ObjectFactory</span>, name=<span class="string">'default'</span>] <span class="keyword">in</span> public void com<span class="class">.opensymphony</span><span class="class">.xwork2</span><span class="class">.config</span><span class="class">.providers</span><span class="class">.XmlConfigurationProvider</span><span class="class">.setObjectFactory</span>(com<span class="class">.opensymphony</span><span class="class">.xwork2</span><span class="class">.ObjectFactory</span>).
+    at com<span class="class">.opensymphony</span><span class="class">.xwork2</span><span class="class">.inject</span><span class="class">.ContainerImpl</span><span class="class">.createParameterInjector</span>(ContainerImpl<span class="class">.java</span>:<span class="number">239</span>)
+    at com<span class="class">.opensymphony</span><span class="class">.xwork2</span><span class="class">.inject</span><span class="class">.ContainerImpl</span><span class="class">.getParametersInjectors</span>(ContainerImpl<span class="class">.java</span>:<span class="number">229</span>)
+    at com<span class="class">.opensymphony</span><span class="class">.xwork2</span><span class="class">.inject</span><span class="class">.ContainerImpl</span><span class="variable">$MethodInjector</span>.&lt;init&gt;(ContainerImpl<span class="class">.java</span>:<span class="number">293</span>)
+    at com<span class="class">.opensymphony</span><span class="class">.xwork2</span><span class="class">.inject</span><span class="class">.ContainerImpl</span>$<span class="number">3</span>.<span class="function"><span class="title">create</span><span class="params">(ContainerImpl.java:<span class="number">117</span>)</span></span>
+    at com<span class="class">.opensymphony</span><span class="class">.xwork2</span><span class="class">.inject</span><span class="class">.ContainerImpl</span>$<span class="number">3</span>.<span class="function"><span class="title">create</span><span class="params">(ContainerImpl.java:<span class="number">114</span>)</span></span>
+    at com<span class="class">.opensymphony</span><span class="class">.xwork2</span><span class="class">.inject</span><span class="class">.ContainerImpl</span><span class="class">.addInjectorsForMembers</span>(ContainerImpl<span class="class">.java</span>:<span class="number">141</span>)
+    ... <span class="number">39</span> more
+<span class="number">2015</span>-<span class="number">4</span>-<span class="number">9</span> <span class="number">16</span>:<span class="number">42</span>:<span class="number">23</span> org<span class="class">.apache</span><span class="class">.catalina</span><span class="class">.core</span><span class="class">.StandardContext</span> startInternal
+严重: Error filterStart
+</code></pre><h1 id="原因">原因</h1><p>　　struts-default.xml,struts-plugin.xml是系统默认，必须在Web.xml加上去。</p>
+<h1 id="解决">解决</h1><p>　　配置改为：</p>
+<pre><code>&lt;init-<span class="built_in">param</span>&gt;
+    &lt;<span class="built_in">param</span>-name&gt;config&lt;/<span class="built_in">param</span>-name&gt;
+    &lt;<span class="built_in">param</span>-<span class="built_in">value</span>&gt;struts-default.xml,struts-plugin.xml,struts.xml&lt;/<span class="built_in">param</span>-<span class="built_in">value</span>&gt;           
+&lt;/init-<span class="built_in">param</span>&gt;
+</code></pre><h1 id="参考链接">参考链接</h1><p><a href="添加链接">链接一</a></p>
+
+      
+    </div>
+    <footer>
+      
+        
+  
+  <div class="categories">
+    <a href="/categories/Struts/">Struts</a>
+  </div>
+
+        
+        
+  <div class="addthis addthis_toolbox addthis_default_style">
+    
+      <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+    
+    
+      <a class="addthis_button_tweet"></a>
+    
+    
+      <a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+    
+    
+      <a class="addthis_button_pinterest_pinit" pi:pinit:layout="horizontal"></a>
+    
+    <a class="addthis_counter addthis_pill_style"></a>
+  </div>
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js"></script>
+
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+<section id="comment">
+  <h1 class="title">留言</h1>
+  
+  <!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="2015/04/30/DependencyException/" data-title="DependencyException" data-url="http://www.christ2li.com/2015/04/30/DependencyException/"></div>
+  <!-- 多说评论框 end -->
+  
+  <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+  <script type="text/javascript">
+	var duoshuoQuery = {short_name:"christ2li"};
+		(function() {
+			var ds = document.createElement('script');
+			ds.type = 'text/javascript';ds.async = true;
+			ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+			ds.charset = 'UTF-8';
+			(document.getElementsByTagName('head')[0] 
+			 || document.getElementsByTagName('body')[0]).appendChild(ds);
+		})();
+   </script>
+   <!-- 多说公共JS代码 end -->
+
+</section>
+
+</div></div>
+    <aside id="sidebar" class="alignright">
+  <div class="search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="搜索">
+    <input type="hidden" name="q" value="site:www.christ2li.com">
+  </form>
+</div>
+
+  
+<div class="widget tag">
+  <h3 class="title">分类</h3>
+  <ul class="entry">
+  
+    <li><a href="/categories/Struts/">Struts</a><small>6</small></li>
+  
+    <li><a href="/categories/hexo/">hexo</a><small>1</small></li>
+  
+    <li><a href="/categories/游记/">游记</a><small>1</small></li>
+  
+    <li><a href="/categories/读书笔记/">读书笔记</a><small>1</small></li>
+  
+  </ul>
+</div>
+
+
+  
+<div class="widget tag">
+  <h3 class="title">标签</h3>
+  <ul class="entry">
+  
+    <li><a href="/tags/游记/">游记</a><small>1</small></li>
+  
+  </ul>
+</div>
+
+
+  <div class="widget widget-toc" style="display: none">
+  <h3 class="title">目录</h3>
+  <div class="container" style="padding: 15px 20px;">
+  </div>
+</div>
+<script src="/js/toc.js" type="text/javascript"></script>
+
+  <div class="scrollup"></div>
+<script language="javascript">
+(function() {
+    /**
+     * @param speed ����ִ�е���ʱ��, ��λ����
+     * @param frames ��������֡��
+     */
+    var smoothScrollToTop = function(speed, frames) {
+        if (window.scrollY === 0) return;
+        //pPixes: ÿ�ι򶯵ľ���
+        var pPixes = Math.ceil(window.scrollY / frames);
+        if (pPixes === 0) pPixes = 1;
+        //interval: ÿ�ι򶯵�ʱ������
+        var interval = Math.ceil(speed / frames);
+        var doScroll = function() {
+            if (window.scrollY == 0) return;
+            var to = window.scrollY - pPixes;
+            if (to <= 0) to = 0;
+            window.scrollTo(0, to);
+            setTimeout(doScroll, interval);
+        };
+        doScroll();
+    };
+    document.querySelector(".scrollup").addEventListener("click", function(){
+        smoothScrollToTop(200, 4);
+    });
+})();
+</script>
+</aside>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><div class="alignleft">
+  
+  &copy; 2015 Christina Li
+  
+</div>
+<div class="clearfix"></div></footer>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+</body>
+</html>
