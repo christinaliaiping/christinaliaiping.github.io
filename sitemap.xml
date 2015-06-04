@@ -2,32 +2,107 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://www.christ2li.com/2015/04/30/no-Action-mapped-for-action-name/</loc>
+    <loc>http://www.christ2li.com/2015/06/04/Spring5-ViewNull/</loc>
+    <lastmod>2015-06-04T05:05:38.003Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.christ2li.com/2015/06/04/Spring4-ClassCastException/</loc>
+    <lastmod>2015-06-04T05:04:28.188Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.christ2li.com/2015/06/04/Spring3-TypeMismatch/</loc>
+    <lastmod>2015-06-04T04:55:06.103Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.christ2li.com/2015/06/04/Spring2-PageNullShow/</loc>
+    <lastmod>2015-06-04T04:50:47.045Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.christ2li.com/2015/06/04/Spring1-XmlBeanDefinationStoreException/</loc>
+    <lastmod>2015-06-04T03:53:51.916Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.christ2li.com/2015/06/04/tomcat2-LifecycleExceptionAndIllegalStateException/</loc>
+    <lastmod>2015-06-04T03:49:04.418Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.christ2li.com/2015/06/04/tomcat1-NoSuchMethodException/</loc>
+    <lastmod>2015-06-04T03:45:46.947Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.christ2li.com/2015/06/04/Hibernate4-Annotation-Unknown-Entity/</loc>
+    <lastmod>2015-06-04T03:35:43.919Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.christ2li.com/2015/06/04/Hibernate2-ClassNotFound/</loc>
+    <lastmod>2015-06-04T03:32:19.138Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.christ2li.com/2015/06/04/Hibernate1-UnsupportedClassVersionError/</loc>
+    <lastmod>2015-06-04T03:28:23.334Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.christ2li.com/2015/06/04/Struts15-null-not-validated/</loc>
+    <lastmod>2015-06-04T03:24:24.224Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.christ2li.com/2015/06/04/Struts14Annotation-Action-Not-found/</loc>
+    <lastmod>2015-06-04T03:21:58.268Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.christ2li.com/2015/06/04/Struts13-resources-fail/</loc>
+    <lastmod>2015-06-04T02:55:09.069Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.christ2li.com/2015/06/04/Struts12-fail-to-send-attachment/</loc>
+    <lastmod>2015-06-04T02:49:21.521Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.christ2li.com/2015/06/03/Struts16Another-problem/</loc>
+    <lastmod>2015-06-04T02:19:24.195Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.christ2li.com/2015/04/30/Struts8no-Action-mapped-for-action-name/</loc>
     <lastmod>2015-05-05T15:10:53.265Z</lastmod>
   </url>
   
   <url>
-    <loc>http://www.christ2li.com/2015/04/30/Dispatcher-initialization-failed/</loc>
+    <loc>http://www.christ2li.com/2015/04/30/Struts7-Dispatcher-initialization-failed/</loc>
     <lastmod>2015-05-05T15:07:36.051Z</lastmod>
   </url>
   
   <url>
-    <loc>http://www.christ2li.com/2015/04/30/DependencyException/</loc>
+    <loc>http://www.christ2li.com/2015/04/30/Struts9-DependencyException/</loc>
     <lastmod>2015-05-05T14:59:56.915Z</lastmod>
   </url>
   
   <url>
-    <loc>http://www.christ2li.com/2015/04/30/No-result-defined-for-action/</loc>
+    <loc>http://www.christ2li.com/2015/04/30/Struts11No-result-defined-for-action/</loc>
     <lastmod>2015-05-05T14:51:52.168Z</lastmod>
   </url>
   
   <url>
-    <loc>http://www.christ2li.com/2015/04/30/classes%E7%9B%AE%E5%BD%95%E4%B8%8B%E7%9A%84struts%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E8%87%AA%E5%8A%A8%E6%B6%88%E5%A4%B1/</loc>
+    <loc>http://www.christ2li.com/2015/04/30/Struts10classes%E7%9B%AE%E5%BD%95%E4%B8%8B%E7%9A%84struts%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E8%87%AA%E5%8A%A8%E6%B6%88%E5%A4%B1/</loc>
     <lastmod>2015-04-30T07:54:17.624Z</lastmod>
   </url>
   
   <url>
-    <loc>http://www.christ2li.com/2015/04/30/struts-bean.tld%20not%20found/</loc>
+    <loc>http://www.christ2li.com/2015/04/30/Struts2-bean.tld%20not%20found/</loc>
     <lastmod>2015-04-30T03:21:57.029Z</lastmod>
   </url>
   
@@ -37,7 +112,7 @@
   </url>
   
   <url>
-    <loc>http://www.christ2li.com/2015/04/30/struts-htmltld-not-found/</loc>
+    <loc>http://www.christ2li.com/2015/04/30/Struts1-htmltld-not-found/</loc>
     <lastmod>2015-04-30T02:41:29.263Z</lastmod>
   </url>
   
