@@ -4,7 +4,7 @@
   <subtitle><![CDATA[Never Cease to Learn]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.christ2li.com/"/>
-  <updated>2016-08-11T08:44:52.540Z</updated>
+  <updated>2016-08-11T08:59:46.858Z</updated>
   <id>http://www.christ2li.com/</id>
   
   <author>
@@ -15,13 +15,13 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title><![CDATA[静态链表的实现]]></title>
+    <title><![CDATA[静态链表的java实现]]></title>
     <link href="http://www.christ2li.com/2016/08/11/StaticLinkedList/"/>
     <id>http://www.christ2li.com/2016/08/11/StaticLinkedList/</id>
     <published>2016-08-11T08:12:33.000Z</published>
-    <updated>2016-08-11T08:44:52.540Z</updated>
-    <content type="html"><![CDATA[<p>摘要：<br>　　静态链表是指用数组描述的链表，也称为游标实现法，下面将就静态链表给出java语言实现。<br><a id="more"></a></p>
-<h1 id="静态链表的java实现">静态链表的java实现</h1><h2 id="定义一个结点对象">定义一个结点对象</h2><pre><code><span class="keyword">package</span> datastructure.linkedlist;
+    <updated>2016-08-11T08:59:46.858Z</updated>
+    <content type="html"><![CDATA[<p>摘要：<br>　　静态链表是指用数组描述的链表，也称为游标实现法，下面给出静态链表的java语言实现。<br><a id="more"></a></p>
+<h1 id="实现代码">实现代码</h1><h2 id="定义一个结点对象">定义一个结点对象</h2><pre><code><span class="keyword">package</span> datastructure.linkedlist;
 
 <span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">NodeforStaticLinkedList</span> </span>{
 
@@ -144,7 +144,7 @@
     }
 
 }
-</code></pre><h2 id="测试代码">测试代码</h2><pre><code>package datastructure.linkedlist;
+</code></pre><h1 id="测试代码">测试代码</h1><pre><code>package datastructure.linkedlist;
 
 public class <span class="built_in">test</span> {
     //定义链表最大长度为<span class="number">1000</span>
@@ -189,7 +189,7 @@ public class <span class="built_in">test</span> {
 </code></pre><h2 id="测试结果">测试结果</h2><p><img src="/img/staticLinkedLinstResult.JPG" alt="staticLinkedLinstResult.JPG"></p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<p>摘要：<br>　　静态链表是指用数组描述的链表，也称为游标实现法，下面将就静态链表给出java语言实现。<br>]]>
+    <![CDATA[<p>摘要：<br>　　静态链表是指用数组描述的链表，也称为游标实现法，下面给出静态链表的java语言实现。<br>]]>
     
     </summary>
     
