@@ -4,7 +4,7 @@
   <subtitle><![CDATA[Never Cease to Learn]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.christ2li.com/"/>
-  <updated>2015-12-27T14:22:50.554Z</updated>
+  <updated>2016-08-11T08:44:52.540Z</updated>
   <id>http://www.christ2li.com/</id>
   
   <author>
@@ -13,6 +13,191 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[静态链表的实现]]></title>
+    <link href="http://www.christ2li.com/2016/08/11/StaticLinkedList/"/>
+    <id>http://www.christ2li.com/2016/08/11/StaticLinkedList/</id>
+    <published>2016-08-11T08:12:33.000Z</published>
+    <updated>2016-08-11T08:44:52.540Z</updated>
+    <content type="html"><![CDATA[<p>摘要：<br>　　静态链表是指用数组描述的链表，也称为游标实现法，下面将就静态链表给出java语言实现。<br><a id="more"></a></p>
+<h1 id="静态链表的java实现">静态链表的java实现</h1><h2 id="定义一个结点对象">定义一个结点对象</h2><pre><code><span class="keyword">package</span> datastructure.linkedlist;
+
+<span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">NodeforStaticLinkedList</span> </span>{
+
+    <span class="keyword">int</span> data;    
+    <span class="keyword">int</span> cur;
+
+    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">getData</span><span class="params">()</span> </span>{
+        <span class="keyword">return</span> data;
+    }
+
+    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setData</span><span class="params">(<span class="keyword">int</span> data)</span> </span>{
+        <span class="keyword">this</span>.data = data;
+    }
+
+    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">getCur</span><span class="params">()</span> </span>{
+        <span class="keyword">return</span> cur;
+    }
+
+    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setCur</span><span class="params">(<span class="keyword">int</span> cur)</span> </span>{
+        <span class="keyword">this</span>.cur = cur;
+    }
+
+    <span class="function"><span class="keyword">public</span> <span class="title">NodeforStaticLinkedList</span><span class="params">()</span> </span>{
+        <span class="comment">//this.data = 0;</span>
+        <span class="comment">//this.cur = 0;</span>
+    }
+
+    <span class="function"><span class="keyword">public</span> <span class="title">NodeforStaticLinkedList</span><span class="params">(<span class="keyword">int</span> data, <span class="keyword">int</span> cur)</span> </span>{
+        <span class="keyword">this</span>.data = data;
+        <span class="keyword">this</span>.cur = cur;
+    }
+
+}
+</code></pre><h2 id="定义一个静态链表对象及基本方法">定义一个静态链表对象及基本方法</h2><pre><code><span class="keyword">package</span> datastructure.linkedlist;
+
+<span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">StaticLinkedList</span> </span>{
+
+    <span class="comment">//定义链表最大长度为1000</span>
+    <span class="keyword">public</span> <span class="keyword">static</span>  <span class="keyword">int</span> MAXSIZE = <span class="number">1000</span>;
+
+    <span class="comment">//存放结点的数组</span>
+    NodeforStaticLinkedList [] nodelist = <span class="keyword">new</span> NodeforStaticLinkedList [MAXSIZE];
+    <span class="comment">//链表的长度，即数据元素的长度</span>
+    <span class="keyword">int</span> length;
+
+    <span class="keyword">public</span> NodeforStaticLinkedList[] getNodelist() {
+        <span class="keyword">return</span> <span class="keyword">this</span>.nodelist;
+    }
+
+    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setNodelist</span><span class="params">(NodeforStaticLinkedList[] nodelist)</span> </span>{
+        <span class="keyword">this</span>.nodelist = nodelist;
+    }
+
+    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">getLength</span><span class="params">()</span> </span>{
+        <span class="keyword">return</span> length;
+    }
+
+    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setLength</span><span class="params">(<span class="keyword">int</span> length)</span> </span>{
+        <span class="keyword">this</span>.length = length;
+    }
+
+    <span class="function"><span class="keyword">public</span> <span class="title">StaticLinkedList</span><span class="params">()</span> </span>{
+        <span class="comment">//nodelist[0].cur = 0;</span>
+        <span class="comment">//nodelist[MAXSIZE-1].cur = 0;</span>
+        initList();
+
+    }
+
+
+    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">initList</span><span class="params">()</span> </span>{
+
+        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; MAXSIZE-<span class="number">1</span>; i++) {
+            nodelist[i] = <span class="keyword">new</span> NodeforStaticLinkedList();
+            nodelist[i].cur = i+<span class="number">1</span>;
+        }
+        nodelist[MAXSIZE-<span class="number">1</span>] = <span class="keyword">new</span> NodeforStaticLinkedList();
+        nodelist[MAXSIZE-<span class="number">1</span>].cur = <span class="number">0</span>;
+        length = <span class="number">0</span>;
+        <span class="keyword">return</span> <span class="keyword">true</span>;
+    }
+
+    <span class="comment">//分配结点</span>
+    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">Malloc_SSL</span><span class="params">()</span> </span>{
+        <span class="keyword">int</span> i = nodelist[<span class="number">0</span>].cur;
+        <span class="keyword">if</span>(!(nodelist[<span class="number">0</span>].cur == <span class="number">0</span>)) {
+            nodelist[<span class="number">0</span>].cur = nodelist[i].cur;
+        }        
+        <span class="keyword">return</span> i;
+    }
+
+    <span class="comment">//在静态链表中的第i个元素之前插入新元素</span>
+    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">ListInsert</span><span class="params">(StaticLinkedList L, <span class="keyword">int</span> i, <span class="keyword">int</span> e)</span> </span>{
+
+        <span class="keyword">if</span>(i &lt; <span class="number">1</span> || i &gt; L.getLength() + <span class="number">1</span>) {
+            System.out.println(<span class="string">"ILLEGAL INPUT"</span>);
+            <span class="keyword">return</span> <span class="keyword">false</span>;
+        }
+
+        <span class="comment">//获取待分配结点的游标     </span>
+        <span class="keyword">int</span> j = L.Malloc_SSL();;
+        <span class="keyword">int</span> k = MAXSIZE-<span class="number">1</span>;
+        <span class="keyword">if</span>(!(j == <span class="number">0</span>)) {
+
+            L.nodelist[j].data = e;
+
+            <span class="keyword">for</span>(<span class="keyword">int</span> l = <span class="number">1</span>; l &lt;= i - <span class="number">1</span>; l++) {
+                k = L.nodelist[k].cur;
+            }
+
+        L.nodelist[j].cur = L.nodelist[k].cur ;
+        L.nodelist[k].cur = j;
+        L.setLength(L.getLength() + <span class="number">1</span>);
+
+        <span class="keyword">return</span> <span class="keyword">true</span>;
+
+        }
+
+        <span class="keyword">return</span> <span class="keyword">false</span>;
+
+    }
+
+}
+</code></pre><h2 id="测试代码">测试代码</h2><pre><code>package datastructure.linkedlist;
+
+public class <span class="built_in">test</span> {
+    //定义链表最大长度为<span class="number">1000</span>
+    public static  int MAXSIZE = <span class="number">1000</span>;
+
+    public static void main(String[] args) {
+         StaticLinkedList <span class="built_in">test</span>List = new StaticLinkedList();
+
+         <span class="built_in">test</span>List.initList();
+         System.out.println(<span class="string">"初始化后头结点的游标指向的备用结点在："</span> + <span class="built_in">test</span>List.nodelist[<span class="number">0</span>].cur);
+         System.out.println(<span class="string">"初始化后尾结点的游标指向的第一个元素在："</span> + <span class="built_in">test</span>List.nodelist[MAXSIZE-<span class="number">1</span>].cur);
+         <span class="built_in">test</span>List.ListInsert(<span class="built_in">test</span>List, <span class="number">1</span>, <span class="number">10</span>);
+         <span class="built_in">test</span>List.ListInsert(<span class="built_in">test</span>List, <span class="number">2</span>, <span class="number">20</span>);
+         <span class="built_in">test</span>List.ListInsert(<span class="built_in">test</span>List, <span class="number">3</span>, <span class="number">40</span>);
+         <span class="built_in">test</span>List.ListInsert(<span class="built_in">test</span>List, <span class="number">4</span>, <span class="number">50</span>);
+         <span class="built_in">test</span>List.ListInsert(<span class="built_in">test</span>List, <span class="number">5</span>, <span class="number">60</span>);
+         System.out.println(<span class="string">"连续插入元素后头结点的游标指向的备用结点在："</span> + <span class="built_in">test</span>List.nodelist[<span class="number">0</span>].cur);
+         System.out.println(<span class="string">"连续插入元素后尾结点的游标指向的第一个元素在："</span> + <span class="built_in">test</span>List.nodelist[MAXSIZE-<span class="number">1</span>].cur);
+         int l = <span class="built_in">test</span>List.length;
+         System.out.println(<span class="string">"插入位置3的元素前表长："</span> + l);
+         System.out.println(<span class="string">"插入前头结点的游标指向的备用结点在："</span> + <span class="built_in">test</span>List.nodelist[<span class="number">0</span>].cur);
+         <span class="keyword">for</span>(int i = <span class="number">1</span>; i &lt;= l; i++) {
+             System.out.print(i + <span class="string">" "</span>  +  <span class="built_in">test</span>List.nodelist[i].data + <span class="string">" "</span>+  <span class="built_in">test</span>List.nodelist[i].cur  + <span class="string">" "</span>);
+         }
+
+         <span class="built_in">test</span>List.ListInsert(<span class="built_in">test</span>List, <span class="number">3</span>, <span class="number">30</span>);
+         System.out.println(<span class="string">"\n"</span> + <span class="string">"插入位置3的元素后头结点的游标指向的备用结点在："</span> + <span class="built_in">test</span>List.nodelist[<span class="number">0</span>].cur);
+         System.out.println(<span class="string">"插入位置3的元素后尾结点的游标指向的第一个元素在："</span> + <span class="built_in">test</span>List.nodelist[MAXSIZE-<span class="number">1</span>].cur);
+         int l1 = <span class="built_in">test</span>List.length;
+         System.out.println(<span class="string">"插入位置3的元素后表长："</span> + l1);
+         System.out.println(<span class="string">"插入位置3的元素后头结点的游标指向的备用结点在："</span> + <span class="built_in">test</span>List.nodelist[<span class="number">0</span>].cur);
+         <span class="keyword">for</span>(int i = <span class="number">1</span>; i &lt;= l1; i++) {
+             System.out.print(i + <span class="string">" "</span>  +  <span class="built_in">test</span>List.nodelist[i].data + <span class="string">" "</span>+  <span class="built_in">test</span>List.nodelist[i].cur + <span class="string">" "</span> );
+         }    
+
+         <span class="built_in">test</span>List.ListInsert(<span class="built_in">test</span>List, <span class="number">1</span>, <span class="number">100</span>);
+         System.out.println(<span class="string">"\n"</span> + <span class="string">"插入位置3的元素后尾结点的游标指向的第一个元素在："</span> + <span class="built_in">test</span>List.nodelist[MAXSIZE-<span class="number">1</span>].cur);
+
+    }
+
+}
+</code></pre><h2 id="测试结果">测试结果</h2><p><img src="/img/staticLinkedLinstResult.JPG" alt="staticLinkedLinstResult.JPG"></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>摘要：<br>　　静态链表是指用数组描述的链表，也称为游标实现法，下面将就静态链表给出java语言实现。<br>]]>
+    
+    </summary>
+    
+      <category term="知识整理 数据结构" scheme="http://www.christ2li.com/tags/%E7%9F%A5%E8%AF%86%E6%95%B4%E7%90%86-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+      <category term="数据结构" scheme="http://www.christ2li.com/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[经济学原理微观经济学分册——经济学十大原理]]></title>
@@ -621,28 +806,6 @@ No <span class="constant">result</span> defined <span class="keyword">for</span>
 ]]></content>
     <summary type="html">
     <![CDATA[<p>在实现发送邮件时，添加了发送附件功能后，测试报错Could not find action or result No result defined for action<br>]]>
-    
-    </summary>
-    
-      <category term="Struts" scheme="http://www.christ2li.com/categories/Struts/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[classes目录下的struts配置文件自动消失]]></title>
-    <link href="http://www.christ2li.com/2015/04/30/Struts10classes%E7%9B%AE%E5%BD%95%E4%B8%8B%E7%9A%84struts%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E8%87%AA%E5%8A%A8%E6%B6%88%E5%A4%B1/"/>
-    <id>http://www.christ2li.com/2015/04/30/Struts10classes目录下的struts配置文件自动消失/</id>
-    <published>2015-04-30T07:32:33.000Z</published>
-    <updated>2015-04-30T07:54:17.624Z</updated>
-    <content type="html"><![CDATA[<p>摘要：<br>struts.xml新建时放在WEB-INF/classes目录下会自动消失<br><a id="more"></a></p>
-<h1 id="时间">时间</h1><p>　　2015年4月24日</p>
-<h1 id="问题">问题</h1><p>　　struts.xml新建时放在WEB-INF/classes目录下会自动消失</p>
-<h1 id="原因">原因</h1><p>　　在WEB-INF/classes下新建struts.xml，这样，在重启tomcat后重新编译的class文件将会覆盖原来的class文件，这样struts.xml自然会被覆盖掉。</p>
-<h1 id="解决">解决</h1><p>　　将struts.xml放在src目录下</p>
-<h1 id="参考链接">参考链接</h1><p><a href="http://my.oschina.net/jawayjiang/blog/88077" target="_blank" rel="external">链接一</a></p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>摘要：<br>struts.xml新建时放在WEB-INF/classes目录下会自动消失<br>]]>
     
     </summary>
     
