@@ -4,7 +4,7 @@
   <subtitle><![CDATA[Never Cease to Learn]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.christ2li.com/"/>
-  <updated>2016-08-11T08:59:46.858Z</updated>
+  <updated>2016-08-11T13:44:38.000Z</updated>
   <id>http://www.christ2li.com/</id>
   
   <author>
@@ -15,11 +15,31 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title><![CDATA[栈]]></title>
+    <link href="http://www.christ2li.com/2016/08/11/NoteforStack/"/>
+    <id>http://www.christ2li.com/2016/08/11/NoteforStack/</id>
+    <published>2016-08-11T13:35:37.000Z</published>
+    <updated>2016-08-11T13:44:38.000Z</updated>
+    <content type="html"><![CDATA[<p>摘要：<br>　　最近复习到栈，整理一下知识要点，以下内容是并非原创，主要是从书中摘抄，用于进行知识整理。<br><a id="more"></a></p>
+<h1 id="栈的定义">栈的定义</h1><p>　　栈是限定仅在表尾进行插入和删除操作的线性表。允许插入和删除的一端称为栈顶（top），另一端称为栈底（bottom），不含任何元素的栈称为空栈。栈又称为后进先出（Last In First Out）线性表，简称LIFO结构。<br>　　栈是线性表，具有线性关系。栈元素具有线性关系，即前驱后继关系。栈的插入操作，叫作进栈，也称压栈、入栈。栈的删除操作，叫作出栈，也叫作弹栈。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>摘要：<br>　　最近复习到栈，整理一下知识要点，以下内容是并非原创，主要是从书中摘抄，用于进行知识整理。<br>]]>
+    
+    </summary>
+    
+      <category term="知识整理 数据结构" scheme="http://www.christ2li.com/tags/%E7%9F%A5%E8%AF%86%E6%95%B4%E7%90%86-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+      <category term="数据结构" scheme="http://www.christ2li.com/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+  </entry>
+  
+  <entry>
     <title><![CDATA[静态链表的java实现]]></title>
     <link href="http://www.christ2li.com/2016/08/11/StaticLinkedList/"/>
     <id>http://www.christ2li.com/2016/08/11/StaticLinkedList/</id>
     <published>2016-08-11T08:12:33.000Z</published>
-    <updated>2016-08-11T08:59:46.858Z</updated>
+    <updated>2016-08-11T08:59:48.000Z</updated>
     <content type="html"><![CDATA[<p>摘要：<br>　　静态链表是指用数组描述的链表，也称为游标实现法，下面给出静态链表的java语言实现。<br><a id="more"></a></p>
 <h1 id="实现代码">实现代码</h1><h2 id="定义一个结点对象">定义一个结点对象</h2><pre><code><span class="keyword">package</span> datastructure.linkedlist;
 
@@ -204,7 +224,7 @@ public class <span class="built_in">test</span> {
     <link href="http://www.christ2li.com/2015/12/27/economic-principle-one/"/>
     <id>http://www.christ2li.com/2015/12/27/economic-principle-one/</id>
     <published>2015-12-27T13:25:44.000Z</published>
-    <updated>2015-12-27T14:22:50.554Z</updated>
+    <updated>2015-12-27T14:22:52.000Z</updated>
     <content type="html"><![CDATA[<p>摘要：<br>最近在啃曼昆的《经济学原理微观经济学分册》，刚看完第一章经济学十大原理，整理了一下第一章的主要内容。<br><a id="more"></a><br>　　什么是经济学？作者告诉我们经济（economy）这个词来源于希腊语oikonomos，它的意思是“管理一个家庭的人”，而事实上，家庭与经济有许多相似之处。为什么会相似？首先，一个家庭和社会同样面临许多决策，这些决策就涉及到具体的分工和资源的分配，而资源是稀缺的，从而家庭或社会的资源管理在这里就尤显重要。</p>
 <h1 id="名词概念">名词概念</h1><h2 id="稀缺性（scarcity）">稀缺性（scarcity）</h2><p>　　社会拥有的资源是有限的，因此不能生产人们希望拥有的所有物品与服务</p>
 <h2 id="经济学（economics）">经济学（economics）</h2><p>　　研究社会如何管理自己的稀缺资源</p>
@@ -251,7 +271,7 @@ public class <span class="built_in">test</span> {
     <link href="http://www.christ2li.com/2015/09/13/ChinaRecentHistoryReading/"/>
     <id>http://www.christ2li.com/2015/09/13/ChinaRecentHistoryReading/</id>
     <published>2015-09-13T13:15:29.000Z</published>
-    <updated>2016-06-28T07:46:10.557Z</updated>
+    <updated>2016-06-28T07:46:12.000Z</updated>
     <content type="html"><![CDATA[<p>摘要：<br>　　作者从当时中国与各国的外交情况对几个时期的关键历史人物的评价等角度夹叙夹议地阐述由清政府从第一次鸦片战争开始至孙中山的三民主义提出后民国时期的中国现代史，读完之后，确实获益良多。<br><a id="more"></a><br>　　作者开篇给出在鸦片战争前，中国与外国通商的情况。当时的清政府在外交方面，没有所谓的各国外交平等概念，自上而下都以“天朝至上”的自以为是的态度，在经济方面，自给自足的经济形式占主体，与外商的交易设置诸多门槛，例如限制贸易地点、时间、不允许外商学习中文等。长期的贸易不平等导致英国人更渴望和平解决贸易问题，只可惜当时的清政府没有外交这一概念，英国使者来访北京时，乾隆由于使者不行使三跪九叩礼节而草草敷衍，和平协议成为不可能，为了改变在中国购买茶叶等导致大量金银流入中国的局面，英国方面向中国倾销鸦片，从而扭转经济局面。在清政府开始派林则徐禁烟，引发义律的报复行动，之后再出动琦善来谈判，进而后来的第一次鸦片战争的爆发，这一响并没有引起清政府自上而下的觉悟，白白浪费自我发展的二十年光阴。</p>
 <p>　　作者在给出这一时期的代表人物林则徐的评价，是既肯定了他是第一个看世界的人，但也指出了他将自己的名誉看高于国家利益的守旧思想的弊端，但作者出字里行间地提及到造成这不思进取的二十年局面当然不是他一个人的原因导致，这是受到当时清政府的态度、人民的觉悟性等因素影响。</p>
 <p>　　在那时的中国，内乱不断。1851年的金田起义后，太平天国建立，可惜洪秀全是个科举失败的学子，仅凭到外国传教的一些片面认识，发起组织起义，其本身存在相当大的局限性，以致于他后来兴建他的宫殿，还有后面太平天国内部互相残杀，讯速地导致这样的一次运动的失败。</p>
@@ -276,7 +296,7 @@ public class <span class="built_in">test</span> {
     <link href="http://www.christ2li.com/2015/08/13/PDReading/"/>
     <id>http://www.christ2li.com/2015/08/13/PDReading/</id>
     <published>2015-08-13T14:29:05.000Z</published>
-    <updated>2015-08-13T15:06:09.913Z</updated>
+    <updated>2015-08-13T15:06:10.000Z</updated>
     <content type="html"><![CDATA[<p>摘要：<br>太久没上博客整理读书笔记和知识了，最近在看《人人都是产品经理》这本书，写下这篇读书笔记总结一下最近看到的章节内容<br><a id="more"></a><br>　　今天看完《人人都是产品经理》第三章，先理一理第三章的主要内容。<br>　　第三章主要讲的是项目的一个生命周期里面涉及到的方方面面。开篇先给出产品与项目之间的区别，其次介绍项目整个生命周期以及项目管理的三大手段，最后总结项目坎坷一生，作者穿插自己在做项目时的一些宝贵的经验和教训，确实让读者受益匪浅。<br>　　<br>　　产品与项目的区别。<br>　　首先，做产品和做项目的区别。从生命周期来看，做产品由于需要摸索生命周期相对比较长，而做项目相对明确，因此比较短。做产品抽象，做项目比较具体。从交付物来看，产品的交付物可以批量输出，而项目只能进行一次。从做产品和做项目的区别中，作者自然地给出了产品经理和项目经理的区别。作者在里面分别用两个字点出两者各自的角色特点。产品经理靠想，项目经理靠做。简而言之，产品经理基于对市场的分析，用户的需求，对产品的方向做出一个判断，也就是里面说到的，判断做什么的角色。至于项目经理，则是在有限的资源条件，比如说人力、时间等，将项目进行到底，重点考虑如何保证项目能如期保质地完成。</p>
 <p>　　项目生命周期<br>待续。。</p>
 ]]></content>
@@ -296,7 +316,7 @@ public class <span class="built_in">test</span> {
     <link href="http://www.christ2li.com/2015/06/04/tomcat2-LifecycleExceptionAndIllegalStateException/"/>
     <id>http://www.christ2li.com/2015/06/04/tomcat2-LifecycleExceptionAndIllegalStateException/</id>
     <published>2015-06-04T03:41:52.000Z</published>
-    <updated>2015-06-04T03:49:04.418Z</updated>
+    <updated>2015-06-04T03:49:06.000Z</updated>
     <content type="html"><![CDATA[<p>摘要：<br>tomcat启动报LifecycleException和IllegalStateException</p>
 <a id="more"></a>
 <h1 id="时间">时间</h1><p>2015年3月19日</p>
@@ -320,7 +340,7 @@ public class <span class="built_in">test</span> {
     <link href="http://www.christ2li.com/2015/06/04/tomcat1-NoSuchMethodException/"/>
     <id>http://www.christ2li.com/2015/06/04/tomcat1-NoSuchMethodException/</id>
     <published>2015-06-04T03:41:05.000Z</published>
-    <updated>2015-06-04T03:45:46.947Z</updated>
+    <updated>2015-06-04T03:45:48.000Z</updated>
     <content type="html"><![CDATA[<p>摘要：<br>tomcat启动报NoSuchMethodException</p>
 <a id="more"></a>
 <h1 id="时间">时间</h1><p>2015年3月19日</p>
@@ -344,7 +364,7 @@ public class <span class="built_in">test</span> {
     <link href="http://www.christ2li.com/2015/06/04/Spring5-ViewNull/"/>
     <id>http://www.christ2li.com/2015/06/04/Spring5-ViewNull/</id>
     <published>2015-06-04T03:40:23.000Z</published>
-    <updated>2015-06-04T06:05:35.400Z</updated>
+    <updated>2015-06-04T06:05:36.000Z</updated>
     <content type="html"><![CDATA[<p>摘要：<br>视图层显示null</p>
 <a id="more"></a>
 <h1 id="时间">时间</h1><p>2015年3月30日</p>
@@ -372,7 +392,7 @@ public class <span class="built_in">test</span> {
     <link href="http://www.christ2li.com/2015/06/04/Spring4-ClassCastException/"/>
     <id>http://www.christ2li.com/2015/06/04/Spring4-ClassCastException/</id>
     <published>2015-06-04T03:39:11.000Z</published>
-    <updated>2015-06-04T05:04:28.188Z</updated>
+    <updated>2015-06-04T05:04:30.000Z</updated>
     <content type="html"><![CDATA[<p>摘要：<br>启动tomcat后，提交表单后，强制类型转换报错</p>
 <a id="more"></a>
 <h1 id="时间">时间</h1><p>2015年3月30日</p>
@@ -397,7 +417,7 @@ public class <span class="built_in">test</span> {
     <link href="http://www.christ2li.com/2015/06/04/Spring3-TypeMismatch/"/>
     <id>http://www.christ2li.com/2015/06/04/Spring3-TypeMismatch/</id>
     <published>2015-06-04T03:38:15.000Z</published>
-    <updated>2015-06-04T04:55:06.103Z</updated>
+    <updated>2015-06-04T04:55:08.000Z</updated>
     <content type="html"><![CDATA[<p>摘要：<br>使用spring4的@Controller注解，报错“type mismatch cannot convert from Controller to annotation”</p>
 <a id="more"></a>
 <h1 id="时间">时间</h1><p>2015年3月26日</p>
@@ -424,7 +444,7 @@ public class <span class="built_in">test</span> {
     <link href="http://www.christ2li.com/2015/06/04/Spring2-PageNullShow/"/>
     <id>http://www.christ2li.com/2015/06/04/Spring2-PageNullShow/</id>
     <published>2015-06-04T03:37:38.000Z</published>
-    <updated>2015-06-04T04:50:47.045Z</updated>
+    <updated>2015-06-04T04:50:48.000Z</updated>
     <content type="html"><![CDATA[<p>摘要：<br>实现从后台逻辑获取数据“HelloWorld”并显示在页面中，但页面显示“null”</p>
 <a id="more"></a>
 <h1 id="时间">时间</h1><p>2015年3月19日</p>
@@ -451,7 +471,7 @@ public class <span class="built_in">test</span> {
     <link href="http://www.christ2li.com/2015/06/04/Spring1-XmlBeanDefinationStoreException/"/>
     <id>http://www.christ2li.com/2015/06/04/Spring1-XmlBeanDefinationStoreException/</id>
     <published>2015-06-04T03:36:48.000Z</published>
-    <updated>2015-06-04T03:53:51.916Z</updated>
+    <updated>2015-06-04T03:53:52.000Z</updated>
     <content type="html"><![CDATA[<p>摘要：<br>启动tomcat报XmlBeanDefinitionStoreException<br><a id="more"></a></p>
 <h1 id="时间">时间</h1><p>2015年3月19日</p>
 <h1 id="问题">问题</h1><p>启动tomcat时，报XmlBeanDefinitionStoreException</p>
@@ -475,7 +495,7 @@ public class <span class="built_in">test</span> {
     <link href="http://www.christ2li.com/2015/06/04/Hibernate4-Annotation-Unknown-Entity/"/>
     <id>http://www.christ2li.com/2015/06/04/Hibernate4-Annotation-Unknown-Entity/</id>
     <published>2015-06-04T03:33:38.000Z</published>
-    <updated>2015-06-04T03:35:43.919Z</updated>
+    <updated>2015-06-04T03:35:44.000Z</updated>
     <content type="html"><![CDATA[<p>摘要：<br>根据<a href="http://www.tutorialspoint.com/hibernate/hibernate_annotations.htm" target="_blank" rel="external">教程</a>实现annotation的例子，在运行程序时，报错提示Unknown entity<br><a id="more"></a></p>
 <h1 id="时间">时间</h1><p>2015年5月29日</p>
 <h1 id="问题">问题</h1><p>根据<a href="http://www.tutorialspoint.com/hibernate/hibernate_annotations.htm" target="_blank" rel="external">教程</a>实现annotation的例子，在运行程序时，报错提示Unknown entity，报错内容如下：</p>
@@ -498,7 +518,7 @@ public class <span class="built_in">test</span> {
     <link href="http://www.christ2li.com/2015/06/04/Hibernate2-ClassNotFound/"/>
     <id>http://www.christ2li.com/2015/06/04/Hibernate2-ClassNotFound/</id>
     <published>2015-06-04T03:28:58.000Z</published>
-    <updated>2015-06-04T03:32:19.138Z</updated>
+    <updated>2015-06-04T03:32:20.000Z</updated>
     <content type="html"><![CDATA[<p>摘要：<br>根据<a href="http://www.tutorialspoint.com/hibernate/hibernate_examples.htm" target="_blank" rel="external">教程</a>，启动时报如下错误<br>Failed to create sessionFactory object.org.hibernate.MappingException: java.lang.ClassNotFoundException: Employee</p>
 <a id="more"></a>
 <h1 id="时间">时间</h1><p>2015年5月27日</p>
@@ -544,7 +564,7 @@ Caused by: java<span class="class">.lang</span><span class="class">.ClassNotFoun
     <link href="http://www.christ2li.com/2015/06/04/Hibernate1-UnsupportedClassVersionError/"/>
     <id>http://www.christ2li.com/2015/06/04/Hibernate1-UnsupportedClassVersionError/</id>
     <published>2015-06-04T03:25:32.000Z</published>
-    <updated>2015-06-04T03:28:23.334Z</updated>
+    <updated>2015-06-04T03:28:24.000Z</updated>
     <content type="html"><![CDATA[<p>摘要：<br>UnsupportedClassVersionError</p>
 <a id="more"></a>
 <h1 id="时间">时间</h1><p>2015年5月26日</p>
@@ -565,7 +585,7 @@ Caused by: java<span class="class">.lang</span><span class="class">.ClassNotFoun
     <link href="http://www.christ2li.com/2015/06/04/Struts15-null-not-validated/"/>
     <id>http://www.christ2li.com/2015/06/04/Struts15-null-not-validated/</id>
     <published>2015-06-04T03:20:15.000Z</published>
-    <updated>2015-06-04T03:24:24.224Z</updated>
+    <updated>2015-06-04T03:24:26.000Z</updated>
     <content type="html"><![CDATA[<p>摘要：<br>用annotation “@RequiredFieldValidator”实现空值校验，但输入空值提交后，没有给出非空提示。<br><a id="more"></a></p>
 <h1 id="时间">时间</h1><p>2015年5月11日</p>
 <h1 id="问题">问题</h1><p>用annotation “@RequiredFieldValidator”实现空值校验，但输入空值提交后，没有给出非空提示。<br>Action Class类如下：</p>
@@ -590,7 +610,7 @@ Caused by: java<span class="class">.lang</span><span class="class">.ClassNotFoun
     <link href="http://www.christ2li.com/2015/06/04/Struts14Annotation-Action-Not-found/"/>
     <id>http://www.christ2li.com/2015/06/04/Struts14Annotation-Action-Not-found/</id>
     <published>2015-06-04T02:57:15.000Z</published>
-    <updated>2015-06-04T03:21:58.268Z</updated>
+    <updated>2015-06-04T03:22:00.000Z</updated>
     <content type="html"><![CDATA[<p>摘要：<br>用注解实现用户验证程序时，用到的注解包括有结果注解、动作注解以及验证注解，具体代码如下，但启动tomcat后，输入用户名字和年龄，报没有找到动作或结果的错误。</p>
 <a id="more"></a>
 <h1 id="时间">时间</h1><p>2015年5月7日</p>
@@ -620,7 +640,7 @@ Caused by: java<span class="class">.lang</span><span class="class">.ClassNotFoun
     <link href="http://www.christ2li.com/2015/06/04/Struts13-resources-fail/"/>
     <id>http://www.christ2li.com/2015/06/04/Struts13-resources-fail/</id>
     <published>2015-06-04T02:48:10.000Z</published>
-    <updated>2015-06-04T02:55:09.069Z</updated>
+    <updated>2015-06-04T02:55:10.000Z</updated>
     <content type="html"><![CDATA[<p>摘要：<br>根据教程实现Localization,internationalization(i18n)例子，但消息资源无法显示</p>
 <a id="more"></a>
 <h1 id="时间">时间</h1><p>2015年4月29日</p>
@@ -644,7 +664,7 @@ Caused by: java<span class="class">.lang</span><span class="class">.ClassNotFoun
     <link href="http://www.christ2li.com/2015/06/04/Struts12-fail-to-send-attachment/"/>
     <id>http://www.christ2li.com/2015/06/04/Struts12-fail-to-send-attachment/</id>
     <published>2015-06-04T02:34:47.000Z</published>
-    <updated>2015-06-04T02:49:21.521Z</updated>
+    <updated>2015-06-04T02:49:22.000Z</updated>
     <content type="html"><![CDATA[<p>摘要：<br>发送邮件添加附件功能后，邮件并没有发出去，设断点发现并没有跳转到Action后台。</p>
 <a id="more"></a>
 <h1 id="时间">时间</h1><p>2015年4月28日</p>
@@ -667,7 +687,7 @@ Caused by: java<span class="class">.lang</span><span class="class">.ClassNotFoun
     <link href="http://www.christ2li.com/2015/06/03/Struts16Another-problem/"/>
     <id>http://www.christ2li.com/2015/06/03/Struts16Another-problem/</id>
     <published>2015-06-03T14:52:15.000Z</published>
-    <updated>2015-06-04T02:19:24.195Z</updated>
+    <updated>2015-06-04T02:19:26.000Z</updated>
     <content type="html"><![CDATA[<p>摘要：There is no Action mapped for namespace [/jsp] and action name [hello] associated with context path<br>[/StrutsHelloWorld]. - [unknown location]</p>
 <a id="more"></a>
 <h1 id="时间">时间</h1><p>2015年5月13日</p>
@@ -687,125 +707,6 @@ Caused by: java<span class="class">.lang</span><span class="class">.ClassNotFoun
 ]]></content>
     <summary type="html">
     <![CDATA[<p>摘要：There is no Action mapped for namespace [/jsp] and action name [hello] associated with context path<br>[/StrutsHelloWorld]. - [unknown location]</p>]]>
-    
-    </summary>
-    
-      <category term="Struts" scheme="http://www.christ2li.com/categories/Struts/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[Could not find action or result No result defined for action]]></title>
-    <link href="http://www.christ2li.com/2015/04/30/Struts11No-result-defined-for-action/"/>
-    <id>http://www.christ2li.com/2015/04/30/Struts11No-result-defined-for-action/</id>
-    <published>2015-04-30T07:35:47.000Z</published>
-    <updated>2015-05-05T14:51:52.168Z</updated>
-    <content type="html"><![CDATA[<p>在实现发送邮件时，添加了发送附件功能后，测试报错Could not find action or result No result defined for action<br><a id="more"></a></p>
-<h1 id="时间">时间</h1><p>　　2015年4月28日</p>
-<h1 id="问题">问题</h1><p>　　在实现发送邮件时，添加了发送附件功能后，测试报错Could not find action or result No result defined for action</p>
-<h1 id="报错">报错</h1><p>1、Action修改如下：</p>
-<pre><code><span class="comment">//添加附件属性</span>
-<span class="keyword">private</span> <span class="keyword">File</span> attachment;
-     <span class="keyword">public</span> <span class="keyword">File</span> getAttachment() {
-           <span class="keyword">return</span> attachment;
-     }
-    <span class="keyword">public</span> <span class="keyword">void</span> setAttachment(<span class="keyword">File</span> attachment) {
-           <span class="keyword">this</span>.attachment = attachment;
-}
-<span class="comment">//添加附件到MimeBodyPart对象</span>
-DataSource <span class="keyword">source</span> = <span class="keyword">new</span> FileDataSource(attachment);  
-messageBodyPart2.setDataHandler(<span class="keyword">new</span> DataHandler(<span class="keyword">source</span>));  
-messageBodyPart2.setFileName(attachment.getName());
-</code></pre><p>2、jsp页面添加：</p>
-<pre><code>&lt;<span class="keyword">input</span> <span class="keyword">type</span>=<span class="string">"file"</span> name=<span class="string">"attachment"</span>/&gt;&lt;<span class="keyword">br</span>/&gt;
-</code></pre><p>3、struts.xml保持不变：</p>
-<pre><code>&lt;action name=<span class="string">"emailer"</span> class=<span class="string">"com.strutsHelloWorld.Emailer"</span> &gt;
-       &lt;<span class="literal">result</span> name=<span class="string">"success"</span>&gt;/jsp/<span class="type">EmailSuccess</span>.jsp&lt;/<span class="literal">result</span>&gt;
-       &lt;<span class="literal">result</span> name=<span class="string">"error"</span>&gt;/jsp/<span class="type">EmailError</span>.jsp&lt;/<span class="literal">result</span>&gt;
-&lt;/action&gt;
-</code></pre><p>但测试报错</p>
-<pre><code><span class="number">2015</span>-<span class="number">4</span>-<span class="number">28</span> <span class="number">15</span>:<span class="number">39</span>:<span class="number">06</span> com.opensymphony.xwork2.interceptor.ParametersInterceptor <span class="keyword">error</span>
-严重: Developer Notification (<span class="keyword">set</span> struts.devMode <span class="keyword">to</span> <span class="constant">false</span> <span class="keyword">to</span> disable this message):
-Unexpected Exception caught setting 'attachment' <span class="function_start"><span class="keyword">on</span></span> '<span class="type">class</span> com.strutsHelloWorld.Emailer: Error setting expression 'attachment' <span class="keyword">with</span> value ['test.txt', ]
-<span class="number">2015</span>-<span class="number">4</span>-<span class="number">28</span> <span class="number">15</span>:<span class="number">39</span>:<span class="number">06</span> com.opensymphony.xwork2.util.LocalizedTextUtil warn
-警告: Missing key [invalid.fieldvalue.attachment] <span class="keyword">in</span> bundles [[org/apache/struts2/struts-messages, com/opensymphony/xwork2/xwork-messages]]!
-<span class="number">2015</span>-<span class="number">4</span>-<span class="number">28</span> <span class="number">15</span>:<span class="number">39</span>:<span class="number">06</span> org.apache.struts2.dispatcher.Dispatcher <span class="keyword">error</span>
-严重: Could <span class="keyword">not</span> find action <span class="keyword">or</span> <span class="constant">result</span>
-/StrutsHelloWorld/jsp/emailer
-No <span class="constant">result</span> defined <span class="keyword">for</span> action com.strutsHelloWorld.Emailer <span class="keyword">and</span> <span class="constant">result</span> input - action - <span class="type">file</span>:/E:/java/workspace/StrutsHelloWorld/WEB-INF/classes/struts.xml:<span class="number">17</span>:<span class="number">66</span>
-    <span class="keyword">at</span> com.opensymphony.xwork2.DefaultActionInvocation.executeResult(DefaultActionInvocation.java:<span class="number">371</span>)
-    <span class="keyword">at</span> com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:<span class="number">273</span>)
-    <span class="keyword">at</span> com.opensymphony.xwork2.validator.ValidationInterceptor.doIntercept(ValidationInterceptor.java:<span class="number">265</span>)
-    <span class="keyword">at</span> org.apache.struts2.interceptor.validation.AnnotationValidationInterceptor.doIntercept(AnnotationValidationInterceptor.java:<span class="number">76</span>)
-    <span class="keyword">at</span> com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:<span class="number">98</span>)
-    <span class="keyword">at</span> com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:<span class="number">244</span>)
-    <span class="keyword">at</span> com.opensymphony.xwork2.interceptor.ConversionErrorInterceptor.intercept(ConversionErrorInterceptor.java:<span class="number">138</span>)
-    <span class="keyword">at</span> com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:<span class="number">244</span>)
-    <span class="keyword">at</span> com.opensymphony.xwork2.interceptor.ParametersInterceptor.doIntercept(ParametersInterceptor.java:<span class="number">229</span>)
-    <span class="keyword">at</span> com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:<span class="number">98</span>)
-    <span class="keyword">at</span> com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:<span class="number">244</span>)
-    <span class="keyword">at</span> com.opensymphony.xwork2.interceptor.ParametersInterceptor.doIntercept(ParametersInterceptor.java:<span class="number">229</span>)
-    <span class="keyword">at</span> com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:<span class="number">98</span>)
-    <span class="keyword">at</span> com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:<span class="number">244</span>)
-    <span class="keyword">at</span> com.opensymphony.xwork2.interceptor.StaticParametersInterceptor.intercept(StaticParametersInterceptor.java:<span class="number">191</span>)
-    <span class="keyword">at</span> com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:<span class="number">244</span>)
-    <span class="keyword">at</span> org.apache.struts2.interceptor.MultiselectInterceptor.intercept(MultiselectInterceptor.java:<span class="number">73</span>)
-    <span class="keyword">at</span> com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:<span class="number">244</span>)
-    <span class="keyword">at</span> org.apache.struts2.interceptor.DateTextFieldInterceptor.intercept(DateTextFieldInterceptor.java:<span class="number">125</span>)
-    <span class="keyword">at</span> com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:<span class="number">244</span>)
-    <span class="keyword">at</span> org.apache.struts2.interceptor.CheckboxInterceptor.intercept(CheckboxInterceptor.java:<span class="number">91</span>)
-    <span class="keyword">at</span> com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:<span class="number">244</span>)
-    <span class="keyword">at</span> org.apache.struts2.interceptor.FileUploadInterceptor.intercept(FileUploadInterceptor.java:<span class="number">253</span>)
-    <span class="keyword">at</span> com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:<span class="number">244</span>)
-    <span class="keyword">at</span> com.opensymphony.xwork2.interceptor.ModelDrivenInterceptor.intercept(ModelDrivenInterceptor.java:<span class="number">100</span>)
-    <span class="keyword">at</span> com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:<span class="number">244</span>)
-    <span class="keyword">at</span> com.opensymphony.xwork2.interceptor.ScopedModelDrivenInterceptor.intercept(ScopedModelDrivenInterceptor.java:<span class="number">141</span>)
-    <span class="keyword">at</span> com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:<span class="number">244</span>)
-    <span class="keyword">at</span> com.opensymphony.xwork2.interceptor.ChainingInterceptor.intercept(ChainingInterceptor.java:<span class="number">145</span>)
-    <span class="keyword">at</span> com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:<span class="number">244</span>)
-    <span class="keyword">at</span> com.opensymphony.xwork2.interceptor.PrepareInterceptor.doIntercept(PrepareInterceptor.java:<span class="number">171</span>)
-    <span class="keyword">at</span> com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:<span class="number">98</span>)
-    <span class="keyword">at</span> com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:<span class="number">244</span>)
-    <span class="keyword">at</span> com.opensymphony.xwork2.interceptor.I18nInterceptor.intercept(I18nInterceptor.java:<span class="number">139</span>)
-    <span class="keyword">at</span> com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:<span class="number">244</span>)
-    <span class="keyword">at</span> org.apache.struts2.interceptor.ServletConfigInterceptor.intercept(ServletConfigInterceptor.java:<span class="number">164</span>)
-    <span class="keyword">at</span> com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:<span class="number">244</span>)
-    <span class="keyword">at</span> com.opensymphony.xwork2.interceptor.AliasInterceptor.intercept(AliasInterceptor.java:<span class="number">193</span>)
-    <span class="keyword">at</span> com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:<span class="number">244</span>)
-    <span class="keyword">at</span> com.opensymphony.xwork2.interceptor.ExceptionMappingInterceptor.intercept(ExceptionMappingInterceptor.java:<span class="number">189</span>)
-    <span class="keyword">at</span> com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:<span class="number">244</span>)
-    <span class="keyword">at</span> org.apache.struts2.impl.StrutsActionProxy.execute(StrutsActionProxy.java:<span class="number">54</span>)
-    <span class="keyword">at</span> org.apache.struts2.dispatcher.Dispatcher.serviceAction(Dispatcher.java:<span class="number">564</span>)
-    <span class="keyword">at</span> org.apache.struts2.dispatcher.ng.ExecuteOperations.executeAction(ExecuteOperations.java:<span class="number">81</span>)
-    <span class="keyword">at</span> org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:<span class="number">99</span>)
-    <span class="keyword">at</span> org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:<span class="number">241</span>)
-    <span class="keyword">at</span> org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:<span class="number">208</span>)
-    <span class="keyword">at</span> org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:<span class="number">220</span>)
-    <span class="keyword">at</span> org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:<span class="number">122</span>)
-    <span class="keyword">at</span> org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:<span class="number">504</span>)
-    <span class="keyword">at</span> org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:<span class="number">170</span>)
-    <span class="keyword">at</span> org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:<span class="number">103</span>)
-    <span class="keyword">at</span> org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:<span class="number">950</span>)
-    <span class="keyword">at</span> org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:<span class="number">116</span>)
-    <span class="keyword">at</span> org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:<span class="number">421</span>)
-    <span class="keyword">at</span> org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:<span class="number">1074</span>)
-    <span class="keyword">at</span> org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:<span class="number">611</span>)
-    <span class="keyword">at</span> org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.<span class="command">run</span>(JIoEndpoint.java:<span class="number">314</span>)
-    <span class="keyword">at</span> java.util.concurrent.ThreadPoolExecutor$Worker.runTask(Unknown Source)
-    <span class="keyword">at</span> java.util.concurrent.ThreadPoolExecutor$Worker.<span class="command">run</span>(Unknown Source)
-    <span class="keyword">at</span> org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.<span class="command">run</span>(TaskThread.java:<span class="number">61</span>)
-    <span class="keyword">at</span> java.lang.Thread.<span class="command">run</span>(Unknown Source)
-</code></pre><h1 id="原因">原因</h1><p>　　Input结果没有指定动作</p>
-<h1 id="解决">解决</h1><p>　　修改struts.xml：</p>
-<pre><code>&lt;action name=<span class="string">"emailer"</span> class=<span class="string">"com.strutsHelloWorld.Emailer"</span> &gt;
-           &lt;<span class="literal">result</span> name=<span class="string">"success"</span>&gt;/jsp/<span class="type">EmailSuccess</span>.jsp&lt;/<span class="literal">result</span>&gt;
-           &lt;<span class="literal">result</span> name=<span class="string">"input"</span>&gt;/jsp/<span class="type">EmailSuccess</span>.jsp&lt;/<span class="literal">result</span>&gt;
-           &lt;<span class="literal">result</span> name=<span class="string">"error"</span>&gt;/jsp/<span class="type">EmailError</span>.jsp&lt;/<span class="literal">result</span>&gt;
-&lt;/action&gt;
-</code></pre><h1 id="参考链接">参考链接</h1><p><a href="http://stackoverflow.com/questions/5742281/no-result-defined-for-action-and-result-input" target="_blank" rel="external">链接一</a></p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>在实现发送邮件时，添加了发送附件功能后，测试报错Could not find action or result No result defined for action<br>]]>
     
     </summary>
     
