@@ -39,7 +39,7 @@
     <link href="http://www.christ2li.com/2016/08/11/StaticLinkedList/"/>
     <id>http://www.christ2li.com/2016/08/11/StaticLinkedList/</id>
     <published>2016-08-11T08:12:33.000Z</published>
-    <updated>2016-08-28T10:50:44.235Z</updated>
+    <updated>2016-08-28T10:56:47.718Z</updated>
     <content type="html"><![CDATA[<p>摘要：<br>　　静态链表是指用数组描述的链表，也称为游标实现法，下面给出静态链表的java语言实现。<br><a id="more"></a></p>
 <h1 id="实现代码">实现代码</h1><h2 id="定义一个结点对象">定义一个结点对象</h2><pre><code><span class="keyword">package</span> datastructure.linkedlist;
 
@@ -206,7 +206,8 @@ public class <span class="built_in">test</span> {
     }
 
 }
-</code></pre><h2 id="测试结果">测试结果</h2><p><img src="\img\staticLinkedLinstResult.jpg" alt="staticLinkedLinstResult.jpg"></p>
+</code></pre><h2 id="测试结果">测试结果</h2><p>　　测试结果见下图：</p>
+<p><img src="\img\spring4img2.jpg" alt="spring4img2.jpg"></p>
 ]]></content>
     <summary type="html">
     <![CDATA[<p>摘要：<br>　　静态链表是指用数组描述的链表，也称为游标实现法，下面给出静态链表的java语言实现。<br>]]>
